@@ -1,0 +1,49 @@
+html{
+    height: 100%
+}
+
+body{
+    height: 100%
+}
+
+#map{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+}
+
+#log{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    opacity: 0.6;
+    color: white;
+    padding: 8px 8px;
+    font-family: Source Code Pro;
+    overflow: scroll;
+}
+
+.config-item{
+    margin-bottom: 10px;
+}
+
+.cur_area{
+    /*color:blue;*/
+    /*text-decoration: underline;*/
+}
+
+.uk-nav-sub li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.uk-nav-sub .uk-button-group{
+    margin-bottom: 10px;
+}
+
+.uk-nav .uk-container{
+    margin-bottom: 10px;
+}
