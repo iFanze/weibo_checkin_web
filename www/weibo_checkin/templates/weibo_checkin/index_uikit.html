@@ -2,13 +2,16 @@
 <html>
 
 <head>
+
   <title></title>
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <link rel="stylesheet" href="css/jquery.nstSlider.min.css" />
-  <link href="css/index.css" rel="stylesheet">
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/uikit.min.js"></script>
-  <script src="js/jquery.nstSlider.min.js"></script>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'weibo_checkin/css/uikit.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery.nstSlider.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'weibo_checkin/css/index.css' %}" >
+  <script src="{% static 'weibo_checkin/js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'weibo_checkin/js/uikit.min.js' %}"></script>
+  <script src="{% static 'weibo_checkin/js/jquery.nstSlider.min.js' %}"></script>
   <script src="http://api.map.baidu.com/api?v=2.0&ak=9b47Gya8CGy0ssOKR4GPoPRd33hDM2Q7"></script>
 </head>
 
