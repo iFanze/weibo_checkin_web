@@ -1,0 +1,6 @@
+2017-03-15 20:32:53 worker_daemon.py[line:24]
+	INFO Worker init. workerid: 1
+2017-03-15 20:44:25 worker_daemon.py[line:71]
+	INFO poi task to do. poiid: b'1'
+2017-03-17 18:10:00 worker_daemon.py[line:24]
+	INFO Worker init. workerid: 1

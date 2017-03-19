@@ -1,0 +1,39 @@
+ {% if areas%}
+     {% for area in areas %}
+    <!-- 一个区域 -->
+    <li class="uk-parent area-item">
+        <input type="hidden" id="name_of_{{ area.id }}" value="{{ area.name }}">
+        <input type="hidden" id="minlat_of_{{ area.id }}" value="{{ area.min_lat }}">
+        <input type="hidden" id="minlon_of_{{ area.id }}" value="{{ area.min_lon }}">
+        <input type="hidden" id="maxlat_of_{{ area.id }}" value="{{ area.max_lat }}">
+        <input type="hidden" id="maxlon_of_{{ area.id }}" value="{{ area.max_lon }}">
+        <input type="hidden" id="poicount_of_{{ area.id }}" value="{{ area.poi_count }}">
+
+        <a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: home"></span>{{ area.name }} <span class="uk-label uk-label-success" id="area-label-{{ area.id }}" style="display: none">更新中</span> </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <div>最近更新：{% if area.last_updated_at|date:"Y-m-d H:i:s" == area.created_at|date:"Y-m-d H:i:s" %} 无 {% else %} {{ area.last_updated_at|date:"Y-m-d H:i:s" }} {% endif %}</div>
+            </li>
+            <li>POI数量：{{ area.poi_count }}</li>
+            <li>
+                <div class="uk-button-group" style="width:100%">
+                    <a class="uk-button uk-button-primary uk-button-small" href="javascript:void(0)" onclick="select_area({{ area.id }})" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span>使用</a>
+                    <a class="uk-button uk-button-secondary uk-button-small" href="javascript:void(0)" onclick="update_area({{ area.id }})" style="width:33%;color: white" id="update-area-{{ area.id }}"><span class="uk-icon uk-margin-small-right" uk-icon="icon: refresh"></span>更新</a>
+                    <a class="uk-button uk-button-secondary uk-button-small" href="javascript:void(0)" onclick="pause_area({{ area.id }})" style="width:33%;color: white;display: none" id="pause-area-{{ area.id }}"><span class="uk-icon uk-margin-small-right" uk-icon="icon: clock"></span>暂停</a>
+                    <a class="uk-button uk-button-secondary uk-button-small" href="javascript:void(0)" onclick="javascript:void(0)" style="width:33%;color: white;display: none" id="disabled-area-{{ area.id }}">请等待</a>
+                    <a class="uk-button uk-button-secondary uk-button-small" href="javascript:void(0)" onclick="continue_area({{ area.id }})" style="width:33%;color: white;display: none" id="continue-area-{{ area.id }}"><span class="uk-icon uk-margin-small-right" uk-icon="icon: chevron-right"></span>继续</a>
+                    <a class="uk-button uk-button-danger uk-button-small" href="javascript:void(0)" onclick="delete_area({{ area.id }})" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: close"></span>删除</a>
+                </div>
+            </li>
+            <li id="area-progress-{{ area.id }}" style="display: none">
+                <div style="margin-top:10px">
+                    <progress class="uk-progress" value="30" max="100"></progress>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <!-- 一个区域 end -->
+    {% endfor %}
+{% else %}
+    <li>没有区域。</li>
+{% endif %}

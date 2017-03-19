@@ -2,237 +2,194 @@
 <html>
 
 <head>
-
-  <title></title>
-
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'weibo_checkin/css/uikit.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery.nstSlider.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'weibo_checkin/css/index.css' %}" >
-  <script src="{% static 'weibo_checkin/js/jquery-3.1.1.min.js' %}"></script>
-  <script src="{% static 'weibo_checkin/js/uikit.min.js' %}"></script>
-  <script src="{% static 'weibo_checkin/js/jquery.nstSlider.min.js' %}"></script>
-  <script src="http://api.map.baidu.com/api?v=2.0&ak=9b47Gya8CGy0ssOKR4GPoPRd33hDM2Q7"></script>
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'weibo_checkin/css/uikit.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery.nstSlider.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'weibo_checkin/css/index.css' %}">
+    <script src="{% static 'weibo_checkin/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'weibo_checkin/js/uikit.min.js' %}"></script>
+    <script src="{% static 'weibo_checkin/js/jquery.nstSlider.min.js' %}"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=9b47Gya8CGy0ssOKR4GPoPRd33hDM2Q7"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
 </head>
 
 <body>
-  <nav class="uk-navbar-container">
-    <div class="uk-container">
-      <div uk-navbar="mode: click" class="uk-navbar">
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="#">微博签到数据管理平台</a>
-          <ul class="uk-navbar-nav">
-            <!-- 导航：区域 -->
-            <li class="uk-active">
-              <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>区域：<span class="cur_area">未选择</span></a>
-              <!-- dropdown -->
-              <div class="uk-navbar-dropdown uk-width-large">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                      <!-- 新增区域 -->
-                      <li>
-                        <div class="uk-container">
-                          <div class="uk-grid uk-grid-collapse">
-                            <div class="uk-width-4-5@m">
-                              <input class="uk-input" type="text" placeholder="新建区域名称...">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar="mode: click" class="uk-navbar">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#">微博签到数据管理平台</a>
+                    <ul class="uk-navbar-nav">
+                        <!-- 导航：区域 -->
+                        <li class="uk-active">
+                            <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>区域：<span class="cur_area">未选择</span></a>
+                            <!-- dropdown -->
+                            <div class="uk-navbar-dropdown uk-width-large" id="nav-menu-area">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li>
+                                        <ul class="uk-nav-default uk-nav-parent-icon" id="area-list" uk-nav>
+                                            <!-- 新增区域 -->
+                                            <li>
+                                                <div class="uk-container">
+                                                    <div class="uk-grid uk-grid-collapse">
+                                                        <div class="uk-width-4-5@m">
+                                                            <input class="uk-input" type="text" placeholder="新建区域名称..." id="add-area-name">
+                                                        </div>
+                                                        <div class="uk-width-1-5@m">
+                                                            <a class="uk-button uk-button-primary" href="#" style="color: white;text-align: center;margin: 0 auto" id="add-area-btn">
+                                                                <span class="uk-icon" uk-icon="icon: plus"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- 新增区域 end -->
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="uk-width-1-5@m">
-                              <a class="uk-button uk-button-primary" href="#" style="color: white;text-align: center;margin: 0 auto">
-                                <span class="uk-icon" uk-icon="icon: plus"></span>
-                              </a>
+                            <!-- dropdown end -->
+                        </li>
+                        <!-- 导航：区域 end -->
+                        <!-- 导航：签到任务 -->
+                        <li class="uk-active">
+                            <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>签到任务</a>
+                            <!-- dropdown -->
+                            <div class="uk-navbar-dropdown uk-width-xxlarge">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header">新建任务</li>
+                                    <li>
+                                        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                            <!-- 新增签到任务 -->
+                                            <li>
+                                                <div class="uk-container">
+                                                    <div class="uk-grid uk-grid-collapse">
+                                                        <div class="uk-width-4-5@m">
+                                                            <div class="uk-grid uk-grid-collapse">
+                                                                <div class="uk-width-1-2@m">
+                                                                    <input class="uk-input" type="text" placeholder="起始时间">
+                                                                </div>
+                                                                <div class="uk-width-1-2@m">
+                                                                    <input class="uk-input" type="text" placeholder="结束时间">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-5@m">
+                                                            <a class="uk-button uk-button-primary" href="#" style="color: white;text-align: center;margin: 0 auto">
+                                                                <span class="uk-icon" uk-icon="icon: plus"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- 新增签到任务 end -->
+                                            <!-- 未完成任务 -->
+                                            <li class="uk-nav-header">未完成</li>
+                                            <li>
+                                                <table class="uk-table uk-table-hover uk-table-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>签到时间范围</th>
+                                                            <th class="uk-table-expand">下载进度</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr uk-tooltip="pos: left" title="总POI：1024个<br/>已完成：512个<br/>进度：50%<br/>已获取签到数：1024条<br/>开始时间：2017.02.14 08:00:00<br/>结束时间：-">
+                                                            <td><span class="uk-label uk-label-success">进行中</span> 2017.01.01 ~ 2017.01.31</td>
+                                                            <td>
+                                                                <progress class="uk-progress" value="30" max="100" style="margin-bottom: 0"></progress>
+                                                            </td>
+                                                            <td>
+                                                                <div class="uk-button-group" style="width:100%">
+                                                                    <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
+                                                                    <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="uk-label uk-label-success">进行中</span> 2017.01.01 ~ 2017.01.31</td>
+                                                            <td>
+                                                                <progress class="uk-progress" value="50" max="100" style="margin-bottom: 0"></progress>
+                                                            </td>
+                                                            <td>
+                                                                <div class="uk-button-group" style="width:100%">
+                                                                    <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
+                                                                    <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="uk-label uk-label-warning">已暂停</span> 2017.01.01 ~ 2017.01.31</td>
+                                                            <td>
+                                                                <progress class="uk-progress" value="20" max="100" style="margin-bottom: 0"></progress>
+                                                            </td>
+                                                            <td>
+                                                                <div class="uk-button-group" style="width:100%">
+                                                                    <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
+                                                                    <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <!-- 未完成任务 end -->
+                                            <!-- 已完成任务 -->
+                                            <li class="uk-nav-header">已完成</li>
+                                            <li>
+                                                <table class="uk-table uk-table-hover uk-table-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>签到时间范围</th>
+                                                            <th class="uk-table-expand">下载进度</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2017.01.01 ~ 2017.01.31</td>
+                                                            <td>
+                                                                总共获取到512条签到信息。
+                                                            </td>
+                                                            <td>
+                                                                <div class="uk-button-group" style="width:100%">
+                                                                    <a class="uk-button uk-button-danger uk-button-small" href="#" style="color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017.01.01 ~ 2017.01.31</td>
+                                                            <td>
+                                                                总共获取到1024条签到信息。
+                                                            </td>
+                                                            <td>
+                                                                <div class="uk-button-group" style="width:100%">
+                                                                    <a class="uk-button uk-button-danger uk-button-small" href="#" style="color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <!-- 已完成任务 end -->
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- 新增区域 end -->
-                      <!-- 一个区域 -->
-                      <li class="uk-parent">
-                        <a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: home"></span>武汉大学</a>
-                        <ul class="uk-nav-sub">
-                          <li>
-                            <div>最近更新：2016-02-14 <span class="uk-label uk-label-success">进行中</span></div>
-                          </li>
-                          <li>POI数量：125</li>
-                          <li>
-                            <div class="uk-button-group" style="width:100%">
-                              <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span>使用</a>
-                              <a class="uk-button uk-button-secondary uk-button-small" href="#" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: refresh"></span>更新</a>
-                              <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: close"></span>删除</a>
-                            </div>
-                          </li>
-                          <li>
-                            <div style="margin-top:10px">
-                              <progress class="uk-progress" value="30" max="100"></progress>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                      <!-- 一个区域 end -->
-                      <li class="uk-nav-divider" />
-                      <!-- 一个区域 -->
-                      <li class="uk-parent">
-                        <a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: home"></span>街道口</a>
-                        <ul class="uk-nav-sub">
-                          <li><a href="#">Sub item</a></li>
-                          <li><a href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                      <!-- 一个区域 end -->
-                      <li class="uk-nav-divider" />
-                      <!-- 一个区域 -->
-                      <li class="uk-parent">
-                        <a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: home"></span>虎泉</a>
-                        <ul class="uk-nav-sub">
-                          <li><a href="#">Sub item</a></li>
-                          <li><a href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                      <!-- 一个区域 end -->
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- dropdown end -->
-            </li>
-            <!-- 导航：区域 end -->
-            <!-- 导航：签到任务 -->
-            <li class="uk-active">
-              <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>签到任务</a>
-              <!-- dropdown -->
-              <div class="uk-navbar-dropdown uk-width-xxlarge">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-nav-header">新建任务</li>
-                  <li>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                      <!-- 新增签到任务 -->
-                      <li>
-                        <div class="uk-container">
-                          <div class="uk-grid uk-grid-collapse">
-                            <div class="uk-width-4-5@m">
-                              <div class="uk-grid uk-grid-collapse">
-                                <div class="uk-width-1-2@m">
-                                  <input class="uk-input" type="text" placeholder="起始时间">
-                                </div>
-                                <div class="uk-width-1-2@m">
-                                  <input class="uk-input" type="text" placeholder="结束时间">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="uk-width-1-5@m">
-                              <a class="uk-button uk-button-primary" href="#" style="color: white;text-align: center;margin: 0 auto">
-                                <span class="uk-icon" uk-icon="icon: plus"></span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- 新增签到任务 end -->
-                      <!-- 未完成任务 -->
-                      <li class="uk-nav-header">未完成</li>
-                      <li>
-                        <table class="uk-table uk-table-hover uk-table-middle">
-                          <thead>
-                            <tr>
-                              <th>签到时间范围</th>
-                              <th class="uk-table-expand">下载进度</th>
-                              <th>操作</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr uk-tooltip="pos: left" title="总POI：1024个<br/>已完成：512个<br/>进度：50%<br/>已获取签到数：1024条<br/>开始时间：2017.02.14 08:00:00<br/>结束时间：-">
-                              <td><span class="uk-label uk-label-success">进行中</span> 2017.01.01 ~ 2017.01.31</td>
-                              <td>
-                                <progress class="uk-progress" value="30" max="100" style="margin-bottom: 0"></progress>
-                              </td>
-                              <td>
-                                <div class="uk-button-group" style="width:100%">
-                                  <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
-                                  <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><span class="uk-label uk-label-success">进行中</span> 2017.01.01 ~ 2017.01.31</td>
-                              <td>
-                                <progress class="uk-progress" value="50" max="100" style="margin-bottom: 0"></progress>
-                              </td>
-                              <td>
-                                <div class="uk-button-group" style="width:100%">
-                                  <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
-                                  <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><span class="uk-label uk-label-warning">已暂停</span> 2017.01.01 ~ 2017.01.31</td>
-                              <td>
-                                <progress class="uk-progress" value="20" max="100" style="margin-bottom: 0"></progress>
-                              </td>
-                              <td>
-                                <div class="uk-button-group" style="width:100%">
-                                  <a class="uk-button uk-button-primary uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: clock"></span></a>
-                                  <a class="uk-button uk-button-danger uk-button-small" href="#" style="width:50%;color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <!-- 未完成任务 end -->
-                      <!-- 已完成任务 -->
-                      <li class="uk-nav-header">已完成</li>
-                      <li>
-                        <table class="uk-table uk-table-hover uk-table-middle">
-                          <thead>
-                            <tr>
-                              <th>签到时间范围</th>
-                              <th class="uk-table-expand">下载进度</th>
-                              <th>操作</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>2017.01.01 ~ 2017.01.31</td>
-                              <td>
-                                总共获取到512条签到信息。
-                              </td>
-                              <td>
-                                <div class="uk-button-group" style="width:100%">
-                                  <a class="uk-button uk-button-danger uk-button-small" href="#" style="color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>2017.01.01 ~ 2017.01.31</td>
-                              <td>
-                                总共获取到1024条签到信息。
-                              </td>
-                              <td>
-                                <div class="uk-button-group" style="width:100%">
-                                  <a class="uk-button uk-button-danger uk-button-small" href="#" style="color: white"><span class="uk-icon" uk-icon="icon: trash"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <!-- 已完成任务 end -->
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- dropdown end -->
-            </li>
-            <!-- 导航：签到任务 end -->
-            <!-- 导航：可视化选项 -->
-            <li class="uk-active">
-              <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>可视化选项</a>
-              <div class="uk-navbar-dropdown uk-width-xlarge">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li>
-                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                      <!--  <li>
+                            <!-- dropdown end -->
+                        </li>
+                        <!-- 导航：签到任务 end -->
+                        <!-- 导航：可视化选项 -->
+                        <li class="uk-active">
+                            <a href="#"><span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>可视化选项</a>
+                            <div class="uk-navbar-dropdown uk-width-xlarge">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li>
+                                        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                            <!--  <li>
                         <div class="uk-container">
                           <div class="uk-grid uk-grid-collapse">
                             <div class="uk-width-1-5@m">
@@ -266,95 +223,81 @@
                           </div>
                         </div>
                       </li> -->
-                      <li>
-                        <table class="uk-table uk-table-hover uk-table-middle">
-                          <tbody>
-                            <tr>
-                              <td class="uk-width-1-5">时间粒度：</td>
-                              <td class="uk-width-4-5">
-                                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                                  <li><a href="#">按天</a></li>
-                                  <li><a href="#">按小时</a></li>
-                                  <li><a href="#">任意时间跨度</a></li>
+                                            <li>
+                                                <table class="uk-table uk-table-hover uk-table-middle">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="uk-width-1-5">时间粒度：</td>
+                                                            <td class="uk-width-4-5">
+                                                                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                                                                    <li><a href="#">按天</a></li>
+                                                                    <li><a href="#">按小时</a></li>
+                                                                    <li><a href="#">任意时间跨度</a></li>
+                                                                </ul>
+                                                            </td>
+                                                            <!-- <td class="uk-width-2-5"> -->
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="uk-width-1-5">时间范围：</td>
+                                                            <td class="uk-width-4-5">
+                                                                <div class="uk-grid uk-grid-collapse">
+                                                                    <div class="uk-width-1-2@m">
+                                                                        <input class="uk-input" type="text" placeholder="起始时间">
+                                                                    </div>
+                                                                    <div class="uk-width-1-2@m">
+                                                                        <input class="uk-input" type="text" placeholder="结束时间">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="uk-width-1-5">图层显示：</td>
+                                                            <td class="uk-width-4-5">
+                                                                <label style="margin-right: 10px">
+                                                                    <input class="uk-checkbox" type="checkbox" checked> 热力图</label>
+                                                                <label style="margin-right: 10px">
+                                                                    <input class="uk-checkbox" type="checkbox" checked> 点聚合</label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="uk-width-1-5"></td>
+                                                            <td class="uk-width-4-5">
+                                                                注：可使用左右方向键快速切换到下一个时间段。
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                              </td>
-                              <!-- <td class="uk-width-2-5"> -->
-                            </tr>
-                            <tr>
-                              <td class="uk-width-1-5">时间范围：</td>
-                              <td class="uk-width-4-5">
-                                <div class="uk-grid uk-grid-collapse">
-                                  <div class="uk-width-1-2@m">
-                                    <input class="uk-input" type="text" placeholder="起始时间">
-                                  </div>
-                                  <div class="uk-width-1-2@m">
-                                    <input class="uk-input" type="text" placeholder="结束时间">
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="uk-width-1-5">图层显示：</td>
-                              <td class="uk-width-4-5">
-                                <label style="margin-right: 10px"><input class="uk-checkbox" type="checkbox" checked> 热力图</label>
-                                <label style="margin-right: 10px"><input class="uk-checkbox" type="checkbox" checked> 点聚合</label>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="uk-width-1-5"></td>
-                              <td class="uk-width-4-5">
-                                注：可使用左右方向键快速切换到下一个时间段。 
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
+                            </div>
+                        </li>
+                        <!-- 导航：可视化选项 end -->
                     </ul>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- 导航：可视化选项 end -->
-          </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
+    <div id="map"></div>
+    <div class="uk-panel" style="display:none;position: absolute;bottom: 50px;width: 100%; padding:0 25%;z-index: 5000">
+        <div class="nstSlider" data-range_min="0" data-range_max="100" data-cur_min="10" data-cur_max="90" style="width: 100%">
+            <div class="highlightPanel"></div>
+            <div class="bar"></div>
+            <div class="leftGrip"></div>
+            <div class="rightGrip"></div>
+        </div>
+        <div class="leftLabel"></div>
+        <div class="rightLabel"></div>
     </div>
-  </nav>
-  <div id="map"></div>
-  <div class="uk-panel" style="display:none;position: absolute;bottom: 50px;width: 100%; padding:0 25%;z-index: 5000">
-    <div class="nstSlider" data-range_min="0" data-range_max="100" data-cur_min="10" data-cur_max="90" style="width: 100%">
-      <div class="highlightPanel"></div>
-      <div class="bar"></div>
-      <div class="leftGrip"></div>
-      <div class="rightGrip"></div>
-    </div>
-    <div class="leftLabel"></div>
-    <div class="rightLabel"></div>
-  </div>
-  <script type="text/javascript">
-  var map = new BMap.Map("map"); // 创建地图实例
-  var point = new BMap.Point(116.404, 39.915); // 创建点坐标
-  map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别
-
-  $('.nstSlider').nstSlider({
-    "left_grip_selector": ".leftGrip",
-    "right_grip_selector": ".rightGrip",
-    "value_bar_selector": ".bar",
-    "highlight": {
-      "grip_class": "gripHighlighted",
-      "panel_selector": ".highlightPanel"
-    },
-    "value_changed_callback": function(cause, leftValue, rightValue) {
-      $('.leftLabel').text(leftValue);
-      $('.rightLabel').text(rightValue);
-    },
-  });
-
-  // Call methods and such...
-  // $('.nstSlider').nstSlider('highlight_range', 20, 50);
-
-  // $('.nstSlider').nstSlider('highlight_range', 60, 70);
-  </script>
+    <script>
+    $.ajaxSetup({
+        data: {
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+        },
+    });
+    </script>
+    <script src="{% static 'weibo_checkin/js/index.js' %}"></script>
 </body>
 
 </html>
