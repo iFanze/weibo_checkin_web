@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.forms.models import model_to_dict
-from .models import Area, POITask, POITaskWorker
+from .models import Area, POITask
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 
@@ -100,16 +100,16 @@ def delete_area_api(request):
     return JsonResponse(result)
 
 
-def _execute_worker(workerid):
+def _execute_task(taskid):
     """ 执行任务，在开始或继续任务时进行 """
     # 1. 更新MySQL，poi_task，status为2：进行中，last_error清空。
-    poi_task = POITask.objects.get(pk=workerid)
+    poi_task = POITask.objects.get(pk=taskid)
     poi_task.status = 2
     poi_task.last_error = ""
     poi_task.save()
     # 2. 更新Redis，更新poi_task_todo_list。
-    r = redis.Redis(host='localhost', port=6379, db=0)
-    r.lpush("poi_task_todo_list", workerid)
+    r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+    r.rpush("poi_task_todo_list", taskid)
     # 接下来的工作交给 WebDeamon 和 WorkerDaemon 。
 
 
@@ -129,14 +129,14 @@ def update_area(request):
     # 2. 分配协作机。
     # 2.1 更新MySQL。
     # poi_task_worker
-    task_worker = POITaskWorker(task=new_task,
-                                worker=1,
-                                min_lat=area.min_lat,
-                                max_lat=area.max_lat,
-                                min_lon=area.min_lon,
-                                max_lon=area.max_lon,
-                                )
-    task_worker.save()
+    # task_worker = POITaskWorker(task=new_task,
+    #                             worker=1,
+    #                             min_lat=area.min_lat,
+    #                             max_lat=area.max_lat,
+    #                             min_lon=area.min_lon,
+    #                             max_lon=area.max_lon,
+    #                             )
+    # task_worker.save()
 
     # poi_task，status为1：已分配。
     new_task.status = 1
@@ -144,35 +144,70 @@ def update_area(request):
 
     # 2.2 更新Redis。
     # poi_task_*_worker_list
-    r = redis.Redis(host='localhost', port=6379, db=0)
-    r.rpush("poi_task_1_worker_list", 1)
+    r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+    r.rpush("poi_task_" + str(new_task.id) + "_worker_list", 1)
     # poi_task_*_worker_*。
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lat", task_worker.min_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lat", task_worker.max_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lon", task_worker.min_lon)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lon", task_worker.max_lon)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lat", task_worker.cur_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lon", task_worker.cur_lon)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lat", area.min_lat)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lat", area.max_lat)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lon", area.min_lon)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lon", area.max_lon)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lat", area.min_lat)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lon", area.min_lon)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "progress", 0)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "errormsg", "")
 
     # 3. 执行任务。
+    _execute_task(new_task.id)
 
     return JsonResponse(APIResult(is_success=True, message="新建更新任务成功，请等待后台处理。"))
 
 
 def pause_area(request):
-    pass
+    r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+    area = Area.objects.get(pk=request.POST['id'])
+    task = POITask.objects.filter(area=area).filter(status=2).order_by('created_at').reverse()[:1]
+    if task.count() == 0:
+        return JsonResponse(APIResult(is_success=False, message="操作失败，没有进行中的任务。"))
+    task = task[0]
+    r.set("poi_" + str(task.id) + "_to_pause", 1)
+    return JsonResponse(APIResult(is_success=True, message="任务暂停成功，请等待后台处理。"))
 
 
 def continue_area(request):
-    pass
+    r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+    area = Area.objects.get(pk=request.POST['id'])
+    task = POITask.objects.filter(area=area).filter(status=3).order_by('created_at').reverse()[:1]
+    if task.count() == 0:
+        return JsonResponse(APIResult(is_success=False, message="操作失败，没有进行中的任务。"))
+    task = task[0]
+    _execute_task(task.id)
+    return JsonResponse(APIResult(is_success=True, message="任务将继续执行，请等待后台处理。"))
 
 
 def get_pois_task(request):
-    tasks = POITask.objects.all()
-    tasks_json = map(model_to_dict, tasks)
-    return JsonResponse(APIResult(is_success=True, data=list(tasks_json)))
+    areas = Area.objects.all()
+    res = []
+    for area in areas:
+        item = {"id": area.id, "last_poi_count": area.poi_count}
+        task = POITask.objects.filter(area=area).order_by('created_at').reverse()
+        if task.count() == 0:
+            item["last_update"] = ""
+            item["show_button"] = "update"
+        else:
+            item["last_update"] = task[0].created_at.strftime('%Y-%m-%d %H:%M:%S')
+            if task[0].status == 3:
+                item["show_button"] = "continue"
+            elif task[0].status == 4:
+                item["show_button"] = "update"
+            else:
+                item["show_button"] = "pause"
+            item["progress"] = task[0].progress
+            item["poi_count"] = task[0].poi_count
+            item["poi_add_count"] = task[0].poi_add_count
+            item["last_error"] = task[0].last_error
+        res.append(item)
+
+    return JsonResponse(APIResult(is_success=True, data=res))
 
 
 def test(request):

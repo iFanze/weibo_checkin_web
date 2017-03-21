@@ -197,90 +197,103 @@ function delete_area(id) {
 // =============== POI =================
 function toggle_update_area(id, opera) {
     $("#disabled-area-" + id).hide();
-    if (opera == "on") {
+    if (opera == "on" || opera == "continue") {
+        // 显示pause
         $("#update-area-" + id).hide();
         $("#continue-area-" + id).hide();
         $("#pause-area-" + id).fadeIn();
         $("#area-progress-" + id).fadeIn();
         $("#area-label-" + id).show();
     } else if (opera == "pause") {
+        // 显示continue
         $("#pause-area-" + id).hide();
         $("#update-area-" + id).hide();
         $("#continue-area-" + id).fadeIn();
         $("#area-progress-" + id).fadeIn();
         $("#area-label-" + id).hide();
-    } else if (opera == "continue") {
-        $("#continue-area-" + id).hide();
-        $("#update-area-" + id).hide();
-        $("#pause-area-" + id).fadeIn();
-        $("#area-progress-" + id).fadeIn();    
-        $("#area-label-" + id).show();    
-    } else if (opera == "finish"){
+    } else if (opera == "finish") {
+        // 显示update
         $("#continue-area-" + id).hide();
         $("#update-area-" + id).fadeIn();
         $("#pause-area-" + id).hide();
-        $("#area-progress-" + id).fadeOut();    
-        $("#area-label-" + id).hide();         
+        $("#area-progress-" + id).fadeOut();
+        $("#area-label-" + id).hide();
     }
 }
 
-function update_area(id) {
+function disable_area(id) {
     $("#update-area-" + id).hide();
     $("#continue-area-" + id).hide();
     $("#pause-area-" + id).hide();
     $("#disabled-area-" + id).show();
-    $.post("/api/area/update/",{
+}
+
+function update_area(id) {
+    disable_area(id);
+    $.post("/api/area/update/", {
         id: id
-    }, function(data){
-        if(data.is_success){
+    }, function(data) {
+        if (data.is_success) {
             show_message(data.message)
-            toggle_update_area(id, "on");
-        }else{
+        } else {
             show_message(data.message, "error")
         }
     })
 }
 
 function pause_area(id) {
-    $("#update-area-" + id).hide();
-    $("#continue-area-" + id).hide();
-    $("#pause-area-" + id).hide();
-    $("#disabled-area-" + id).show();
-    $.post("/api/area/pause/",{
+    disable_area(id);
+    $.post("/api/area/pause/", {
         id: id
-    }, function(data){
-        if(data.is_success){
+    }, function(data) {
+        if (data.is_success) {
             show_message(data.message)
-            toggle_update_area(id, "pause");
-        }else{
+        } else {
             show_message(data.message, "error")
         }
     })
 }
 
 function continue_area(id) {
-    $("#update-area-" + id).hide();
-    $("#continue-area-" + id).hide();
-    $("#pause-area-" + id).hide();
-    $("#disabled-area-" + id).show();
-        $.post("/api/area/pause/",{
+    disable_area(id);
+    $.post("/api/area/continue/", {
         id: id
-    }, function(data){
-        if(data.is_success){
+    }, function(data) {
+        if (data.is_success) {
             show_message(data.message)
-            toggle_update_area(id, "continue");
-        }else{
+        } else {
             show_message(data.message, "error")
         }
     })
 }
 
 
-function get_pois_task(){
-    $.get("/api/task/pois/", function(data){
-        if(data.is_success){
-
-        }else{
+function get_pois_task() {
+    $.get("/api/task/pois/", function(data) {
+        if (data.is_success) {
+            for (var area in data.data) {
+                area = data.data[area]
+                switch (area.show_button) {
+                    case "update":
+                        toggle_update_area(area.id, "finish");
+                        break;
+                    case "pause":
+                        toggle_update_area(area.id, "continue");
+                        $("#area-" + area.id + "-update-progress").val(area.progress);
+                        $("#progress-value-" + area.id).html(area.progress)
+                        $("#last-error-value-" + area.id).html(area.last_error)
+                        break;
+                    case "continue":
+                        toggle_update_area(area.id, "pause");
+                        $("#area-" + area.id + "-update-progress").val(area.progress);
+                        $("#progress-value-" + area.id).html(area.progress)
+                        $("#last-error-value-" + area.id).html(area.last_error)
+                        break;
+                    default:
+                        disable_area(area.id);
+                }
+            }
+        } else {
             show_message(data.message, "error")
         }
     });
@@ -294,7 +307,7 @@ $(function() {
     //var point = new BMap.Point(116.381003, 39.91262); // 创建点坐标
     //map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别
     reload_areas();
-    refresh_poi_job = self.setInterval("get_pois_task()",5000)
+    refresh_poi_job = self.setInterval("get_pois_task()", 5000)
 })
 
 

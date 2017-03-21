@@ -26,7 +26,7 @@ class Area(models.Model):
 class POITask(models.Model):
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
     status = models.IntegerField(default=0)
-    last_error = models.CharField(max_length=100)
+    last_error = models.CharField(max_length=100, default="")
     progress = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     start_time = models.DateTimeField(null=True)
@@ -35,19 +35,19 @@ class POITask(models.Model):
     poi_add_count = models.IntegerField(default=0)
 
 
-class POITaskWorker(models.Model):
-    task = models.ForeignKey(POITask, on_delete=models.CASCADE)
-    worker = models.IntegerField(default=0)
-    min_lat = models.DecimalField(max_digits=9, decimal_places=6)
-    max_lat = models.DecimalField(max_digits=9, decimal_places=6)
-    min_lon = models.DecimalField(max_digits=9, decimal_places=6)
-    max_lon = models.DecimalField(max_digits=9, decimal_places=6)
-    created_at = models.DateTimeField(auto_now_add=True)
-    start_time = models.DateTimeField(null=True)
-    end_time = models.DateTimeField(null=True)
-    poi_incr_count = models.IntegerField(default=0)
-    poi_repeat_count = models.IntegerField(default=0)
-    poi_count = models.IntegerField(default=0)
+# class POITaskWorker(models.Model):
+#     task = models.ForeignKey(POITask, on_delete=models.CASCADE)
+#     worker = models.IntegerField(default=0)
+#     min_lat = models.DecimalField(max_digits=9, decimal_places=6)
+#     max_lat = models.DecimalField(max_digits=9, decimal_places=6)
+#     min_lon = models.DecimalField(max_digits=9, decimal_places=6)
+#     max_lon = models.DecimalField(max_digits=9, decimal_places=6)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     start_time = models.DateTimeField(null=True)
+#     end_time = models.DateTimeField(null=True)
+#     poi_incr_count = models.IntegerField(default=0)
+#     poi_repeat_count = models.IntegerField(default=0)
+#     poi_count = models.IntegerField(default=0)
 
 
 # class POITaskOfWorker(models.Model):

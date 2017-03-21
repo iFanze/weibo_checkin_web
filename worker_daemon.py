@@ -1,16 +1,29 @@
 import logging
-from daemon import Daemon
-
-from weibo import APIClient
-from weibo_login import WeiboLogin, WeiboLoginError
-
 import sys
 import os
 import time
 import redis
-from worker_config import config
-# import aiomysql
 import MySQLdb
+
+from worker_config import config
+from daemon import Daemon
+
+
+class JsonDict(dict):
+    """ general json object that allows attributes to be bound to and also behaves like a dict """
+    def __getattr__(self, attr):
+        try:
+            return self[attr]
+        except KeyError:
+            raise AttributeError(r"'JsonDict' object has no attribute '%s'" % attr)
+
+    def __setattr__(self, attr, value):
+        self[attr] = value
+
+    def __init__(self, dictionary):
+        keys = list(dictionary.keys())
+        for key in keys:
+            self.__setattr__(key, dictionary[key])
 
 
 class WorkerDaemon(Daemon):
@@ -18,13 +31,17 @@ class WorkerDaemon(Daemon):
         super().__init__(pidfile, stdin, stdout, stderr)
         self.worker_id = workerid
         self.weibo_apps = []
+        self.delta_latlon = 0.005
         self.mysql_conn = MySQLdb.connect(host="localhost", user="root",
                                           passwd="admin", db="weibo_checkin")
-        self.redis_conn = redis.Redis(host='localhost', port=6379, db=0)
-        logging.info("Worker init. workerid: %s" % workerid)
+        self.redis_conn = redis.Redis(host='localhost', port=6379, db=0,
+                                      decode_responses=True)
+        self.doing_list = []
+        logging.info("Worker #%s inited." % workerid)
 
     def mysql_select(self, sql, args, size=None):
-        cur = self.mysql_conn.cursor()
+        logging.info(sql + '\n\t' + (args or ""))
+        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
         try:
             cur.execute(sql.replace('?', '%s'), args or ())
             if size:
@@ -42,7 +59,8 @@ class WorkerDaemon(Daemon):
         return rs
 
     def mysql_execute(self, sql, args):
-        cur = self.mysql_conn.cursor()
+        logging.info(sql + '\n\t' + str(args))
+        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
         try:
             cur.execute(sql.replace('?', '%s'), args)
             affected = cur.rowcount
@@ -56,40 +74,109 @@ class WorkerDaemon(Daemon):
 
     def run(self):
         """ 运行worker """
+
+        # 如果程序意外退出，需要继续处理仍留在doing_list中的任务。
+        last_doing = self.redis_conn.lrange("poi_worker_" + str(self.worker_id) + "_doing_list", 0, -1)
+        last_doing = list(map(int, last_doing))
+        for doing in last_doing:
+            logging.info("poi last_doing found, taskid: %s" % doing)
+            self.execute_poi_task(doing)
+
+        # 监视新任务。
         while True:
-            sys.stdout.write('%s:working\n' % (time.ctime(),))
+            sys.stdout.write('.')
             sys.stdout.flush()
             # 弹出poi_worker_1_todo_list。
             todo = self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_todo_list")
             if todo:
-                self.redis_conn.rpush("poi_worker_" + str(self.worker_id) + "_doing_list")
+                logging.info("poi_todo found, taskid: %s" % todo)
+                self.redis_conn.rpush("poi_worker_" + str(self.worker_id) + "_doing_list", todo)
+                self.doing_list.append(todo)
                 self.execute_poi_task(todo)
+
             time.sleep(2)
 
     def read_weibo_apps(self, _config):
         self.weibo_apps = _config
 
+    def get_poi_task_x_worker_self(self, taskid):
+        task = self.redis_conn.hgetall("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id))
+        task = JsonDict(task)
+        task.cur_lat = float(task.cur_lat)
+        task.cur_lon = float(task.cur_lon)
+        task.max_lon = float(task.max_lon)
+        task.max_lat = float(task.max_lat)
+        task.min_lon = float(task.min_lon)
+        task.min_lat = float(task.min_lat)
+        task.progress = int(task.progress)
+        return task
+
     def execute_poi_task(self, taskid):
         """ 开始/继续一个任务 """
-        logging.info("poi task to do. poiid: %s" % taskid)
-
-        # 放进working队列，代表正在进行
-        self.redis_conn.rpush("poi_task_" + str(self.worker_id) + "_working", taskid)
 
         try:
             pid = os.fork()
-            if pid == 0:        # 在子进程中进行任务。
+            if pid == 0:  # 在子进程中进行任务。
                 # 得到当前任务进行的信息。
-                try:
-                    # 只要没有检测到暂停指令，就继续进行任务。
-                    while not self.redis_conn.exists("poi_" + str(taskid) + "_to_pause"):
-                        time.sleep(5)   # 进行一次兴趣点的下载和插入数据库的操作。
-                        # 任务完成
-                        if True:
-                            logging.info("poi task finish. poiid: %s" % taskid)
-                except BaseException as e:
-                    # 任务出错。
-                    logging.info("poi task error. poiid: %s" % poiid)
+                # 只要没有检测到暂停指令，就继续进行任务。
+                logging.info("[%s]execute poi task #%s." % (os.getpid(), taskid))
+
+                task = self.get_poi_task_x_worker_self(taskid)
+
+                lon_total = int((task.max_lon - task.min_lon) / self.delta_latlon) + 1
+                lat_total = int((task.max_lat - task.min_lat) / self.delta_latlon) + 1
+                logging.info("lon_total: %s, lat_total: %s" % (lon_total, lat_total))
+
+                while not self.redis_conn.exists("poi_" + str(taskid) + "_to_pause"):
+                    # 任务完成
+                    if task.cur_lat > task.max_lat:
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "progress", 100)
+                        self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
+                        logging.info("poi task #%s finish." % taskid)
+                        sys.exit()
+                    try:
+                        time.sleep(2)   # 下载数据
+                        # 计算progress
+                        lon = round((task.cur_lon - task.min_lon) / self.delta_latlon) + 1
+                        lat = round((task.cur_lat - task.min_lat) / self.delta_latlon) + 1
+                        progress = round((lon_total * (lat - 1) + lon) / (lat_total * lon_total) * 100)
+                        if progress > 20:
+                            raise
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "progress", progress)
+                        logging.info("cur_lon: %s, cur_lat: %s, cur_progress: %s" %
+                                     (task.cur_lon, task.cur_lat, progress))
+                        # 设置新的cur_lat、cur_lon
+                        new_lat = task.cur_lat
+                        new_lon = task.cur_lon + self.delta_latlon
+                        if new_lon > task.max_lon:
+                            new_lon = task.min_lon
+                            new_lat = task.cur_lat + self.delta_latlon
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "cur_lon", new_lon)
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "cur_lat", new_lat)
+
+                        task = self.get_poi_task_x_worker_self(taskid)
+
+                    except BaseException as e:
+                        # 任务出错
+                        errmsg = "some reason i don't know"
+                        self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
+                        logging.info("poi task #%s error: %s" % (taskid, errmsg))
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "errormsg", errmsg)
+                        sys.exit()
+                    time.sleep(2)  # 每次网络请求的间隔
+                # 由于用户主动暂停而终止：
+                self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
+                self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                     "errormsg", "用户暂停")
+                logging.info("task #%s paused." % taskid)
+
+                # todo: 更新cur_lat和cur_lon
+                # todo: 这里的doing_list只能容纳一个元素
                 sys.exit()
         except OSError as err:
             sys.stderr.write('fork failed: {0}\n'.format(err))
@@ -102,11 +189,14 @@ if __name__ == '__main__':
         level=logging.INFO,
         format='%(asctime)s %(filename)s[line:%(lineno)d]\n\t%(levelname)s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
-        filename='example.log'
+        filename='worker_daemon_%s.log' % (time.strftime("%Y-%m-%d", time.localtime()))
     )
 
     # 守护进程
-    daemon = WorkerDaemon('/tmp/watch_process.pid', workerid=config["worker_id"], stdout="/dev/stdout")
+    daemon = WorkerDaemon('/tmp/worker_daemon.pid',
+                          workerid=config["worker_id"],
+                          stdout="/dev/stdout",
+                          stderr="/dev/stdout")
     daemon.read_weibo_apps(config["weibo_apps"])
 
     if len(sys.argv) == 2:

@@ -1,0 +1,2610 @@
+2017-03-21 10:46:05 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 10:46:49 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 15
+2017-03-21 10:46:49 worker_daemon.py[line:122]
+	INFO [1591]execute poi task #15.
+2017-03-21 10:46:49 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 10:46:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 10:46:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 10:46:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 10:47:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 10:47:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 10:47:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 10:47:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 10:47:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 10:47:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 10:47:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 10:47:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 10:47:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 10:47:37 worker_daemon.py[line:136]
+	INFO poi task #15 finish.
+2017-03-21 10:48:31 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 16
+2017-03-21 10:48:31 worker_daemon.py[line:122]
+	INFO [1618]execute poi task #16.
+2017-03-21 10:48:31 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 10:48:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 10:48:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 10:48:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 10:48:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 10:48:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 10:48:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 10:48:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 10:49:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 10:49:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 10:49:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 10:49:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 10:49:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 10:49:19 worker_daemon.py[line:136]
+	INFO poi task #16 finish.
+2017-03-21 10:49:51 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 17
+2017-03-21 10:49:51 worker_daemon.py[line:122]
+	INFO [1682]execute poi task #17.
+2017-03-21 10:49:51 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 10:49:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 10:49:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 10:50:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 10:50:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 10:50:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 10:50:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 10:50:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 10:50:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 10:50:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 10:50:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 10:50:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 10:50:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 10:50:39 worker_daemon.py[line:136]
+	INFO poi task #17 finish.
+2017-03-21 10:51:29 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 10:51:52 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 10:52:04 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 18
+2017-03-21 10:52:04 worker_daemon.py[line:122]
+	INFO [2041]execute poi task #18.
+2017-03-21 10:52:04 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 10:52:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 10:52:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 10:52:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 10:52:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 10:52:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 10:52:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:52:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:53:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 10:53:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 10:53:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:53:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:53:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:53:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 10:54:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.525821, cur_progress: 3
+2017-03-21 10:54:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:54:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:55:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 10:55:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 10:55:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:55:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:55:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 10:56:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.525821, cur_progress: 7
+2017-03-21 10:56:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.525821, cur_progress: 7
+2017-03-21 10:56:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:56:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:56:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:56:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:56:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:56:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:57:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:57:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 10:57:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 10:57:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:57:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:57:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.526821, cur_progress: 9
+2017-03-21 10:58:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 10:58:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.527821000000003, cur_progress: 10
+2017-03-21 10:58:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.527821000000003, cur_progress: 10
+2017-03-21 10:59:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.527821000000003, cur_progress: 10
+2017-03-21 10:59:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.527821000000003, cur_progress: 10
+2017-03-21 10:59:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.527821000000003, cur_progress: 10
+2017-03-21 10:59:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.527821000000003, cur_progress: 11
+2017-03-21 10:59:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 10:59:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.527821000000003, cur_progress: 12
+2017-03-21 11:00:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:00:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:01:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:01:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.527821000000003, cur_progress: 13
+2017-03-21 11:01:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.528821000000004, cur_progress: 13
+2017-03-21 11:01:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.528821000000004, cur_progress: 14
+2017-03-21 11:01:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:01:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.528821000000004, cur_progress: 15
+2017-03-21 11:02:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:02:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:02:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:02:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:02:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:02:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:03:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:03:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:03:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:03:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.528821000000004, cur_progress: 16
+2017-03-21 11:03:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.528821000000004, cur_progress: 17
+2017-03-21 11:03:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.528821000000004, cur_progress: 17
+2017-03-21 11:03:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.529821000000005, cur_progress: 17
+2017-03-21 11:03:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.529821000000005, cur_progress: 18
+2017-03-21 11:04:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:04:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:04:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:04:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:04:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:04:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:05:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:05:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:05:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:05:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.529821000000005, cur_progress: 19
+2017-03-21 11:05:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.529821000000005, cur_progress: 20
+2017-03-21 11:05:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.530821000000007, cur_progress: 20
+2017-03-21 11:05:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.530821000000007, cur_progress: 20
+2017-03-21 11:05:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.530821000000007, cur_progress: 20
+2017-03-21 11:05:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.530821000000007, cur_progress: 20
+2017-03-21 11:05:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.530821000000007, cur_progress: 20
+2017-03-21 11:06:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.530821000000007, cur_progress: 21
+2017-03-21 11:06:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:06:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:06:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:06:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:06:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.530821000000007, cur_progress: 22
+2017-03-21 11:07:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.530821000000007, cur_progress: 23
+2017-03-21 11:07:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.531821000000008, cur_progress: 23
+2017-03-21 11:08:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.531821000000008, cur_progress: 24
+2017-03-21 11:08:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:08:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:08:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:08:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:08:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.531821000000008, cur_progress: 25
+2017-03-21 11:09:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:09:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:10:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.531821000000008, cur_progress: 26
+2017-03-21 11:10:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.531821000000008, cur_progress: 27
+2017-03-21 11:10:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.531821000000008, cur_progress: 27
+2017-03-21 11:10:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.53282100000001, cur_progress: 27
+2017-03-21 11:10:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:10:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:10:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:10:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.53282100000001, cur_progress: 28
+2017-03-21 11:11:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:11:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:12:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.53282100000001, cur_progress: 29
+2017-03-21 11:12:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.53282100000001, cur_progress: 30
+2017-03-21 11:12:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.53382100000001, cur_progress: 30
+2017-03-21 11:12:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.53382100000001, cur_progress: 30
+2017-03-21 11:12:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.53382100000001, cur_progress: 30
+2017-03-21 11:12:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.53382100000001, cur_progress: 30
+2017-03-21 11:12:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.53382100000001, cur_progress: 30
+2017-03-21 11:12:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:12:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:12:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.53382100000001, cur_progress: 31
+2017-03-21 11:13:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:13:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:14:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:14:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.53382100000001, cur_progress: 32
+2017-03-21 11:14:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.53382100000001, cur_progress: 33
+2017-03-21 11:14:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.53482100000001, cur_progress: 33
+2017-03-21 11:14:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:14:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:14:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.53482100000001, cur_progress: 34
+2017-03-21 11:15:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:15:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:16:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:16:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:16:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.53482100000001, cur_progress: 35
+2017-03-21 11:16:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.53482100000001, cur_progress: 36
+2017-03-21 11:16:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.53482100000001, cur_progress: 37
+2017-03-21 11:17:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.53482100000001, cur_progress: 37
+2017-03-21 11:17:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.535821000000013, cur_progress: 37
+2017-03-21 11:17:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:17:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:17:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:17:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:17:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:17:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:18:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:18:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:18:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:18:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.535821000000013, cur_progress: 38
+2017-03-21 11:18:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.535821000000013, cur_progress: 39
+2017-03-21 11:18:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.535821000000013, cur_progress: 40
+2017-03-21 11:19:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.536821000000014, cur_progress: 40
+2017-03-21 11:19:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.536821000000014, cur_progress: 40
+2017-03-21 11:19:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.536821000000014, cur_progress: 40
+2017-03-21 11:19:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.536821000000014, cur_progress: 40
+2017-03-21 11:19:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.536821000000014, cur_progress: 40
+2017-03-21 11:19:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:19:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:19:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:19:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:19:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.536821000000014, cur_progress: 41
+2017-03-21 11:20:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:20:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.536821000000014, cur_progress: 42
+2017-03-21 11:21:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.536821000000014, cur_progress: 43
+2017-03-21 11:21:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.537821000000015, cur_progress: 43
+2017-03-21 11:21:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:21:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:21:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:21:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:21:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.537821000000015, cur_progress: 44
+2017-03-21 11:22:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:22:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:23:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.537821000000015, cur_progress: 45
+2017-03-21 11:23:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.537821000000015, cur_progress: 46
+2017-03-21 11:23:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.537821000000015, cur_progress: 47
+2017-03-21 11:23:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.537821000000015, cur_progress: 47
+2017-03-21 11:23:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:23:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.538821000000016, cur_progress: 47
+2017-03-21 11:24:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:24:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:25:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.538821000000016, cur_progress: 48
+2017-03-21 11:25:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.538821000000016, cur_progress: 49
+2017-03-21 11:25:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:25:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:25:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:25:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:26:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:26:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.538821000000016, cur_progress: 50
+2017-03-21 11:26:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.539821000000018, cur_progress: 50
+2017-03-21 11:26:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.539821000000018, cur_progress: 50
+2017-03-21 11:26:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.539821000000018, cur_progress: 50
+2017-03-21 11:26:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.539821000000018, cur_progress: 50
+2017-03-21 11:26:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.539821000000018, cur_progress: 50
+2017-03-21 11:26:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:26:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:27:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:27:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.539821000000018, cur_progress: 51
+2017-03-21 11:27:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.539821000000018, cur_progress: 52
+2017-03-21 11:27:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:27:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:27:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.539821000000018, cur_progress: 53
+2017-03-21 11:28:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.54082100000002, cur_progress: 53
+2017-03-21 11:28:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:28:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:29:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:29:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.54082100000002, cur_progress: 54
+2017-03-21 11:29:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.54082100000002, cur_progress: 55
+2017-03-21 11:29:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:29:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.54082100000002, cur_progress: 56
+2017-03-21 11:30:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.54082100000002, cur_progress: 57
+2017-03-21 11:30:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.54082100000002, cur_progress: 57
+2017-03-21 11:30:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:30:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:30:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:30:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:30:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:31:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:31:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:31:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.54182100000002, cur_progress: 57
+2017-03-21 11:31:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.54182100000002, cur_progress: 58
+2017-03-21 11:31:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:31:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.54182100000002, cur_progress: 59
+2017-03-21 11:32:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.54182100000002, cur_progress: 60
+2017-03-21 11:32:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.54282100000002, cur_progress: 60
+2017-03-21 11:33:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.54282100000002, cur_progress: 60
+2017-03-21 11:33:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.54282100000002, cur_progress: 60
+2017-03-21 11:33:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.54282100000002, cur_progress: 60
+2017-03-21 11:33:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.54282100000002, cur_progress: 60
+2017-03-21 11:33:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.54282100000002, cur_progress: 61
+2017-03-21 11:33:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.54282100000002, cur_progress: 62
+2017-03-21 11:34:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:34:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:34:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:34:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:34:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:34:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:35:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:35:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:35:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.54282100000002, cur_progress: 63
+2017-03-21 11:35:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.543821000000023, cur_progress: 63
+2017-03-21 11:35:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.543821000000023, cur_progress: 64
+2017-03-21 11:35:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.543821000000023, cur_progress: 65
+2017-03-21 11:36:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:36:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:36:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:36:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:36:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.543821000000023, cur_progress: 66
+2017-03-21 11:37:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.543821000000023, cur_progress: 67
+2017-03-21 11:37:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.543821000000023, cur_progress: 67
+2017-03-21 11:37:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:37:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.544821000000024, cur_progress: 67
+2017-03-21 11:38:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.544821000000024, cur_progress: 68
+2017-03-21 11:38:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:38:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:38:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:38:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:38:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.544821000000024, cur_progress: 69
+2017-03-21 11:39:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.544821000000024, cur_progress: 70
+2017-03-21 11:39:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.545821000000025, cur_progress: 70
+2017-03-21 11:39:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.545821000000025, cur_progress: 70
+2017-03-21 11:39:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.545821000000025, cur_progress: 70
+2017-03-21 11:39:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.545821000000025, cur_progress: 70
+2017-03-21 11:40:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.545821000000025, cur_progress: 70
+2017-03-21 11:40:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.545821000000025, cur_progress: 71
+2017-03-21 11:40:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:40:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:40:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:40:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.545821000000025, cur_progress: 72
+2017-03-21 11:41:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:41:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.545821000000025, cur_progress: 73
+2017-03-21 11:42:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.546821000000026, cur_progress: 73
+2017-03-21 11:42:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.546821000000026, cur_progress: 74
+2017-03-21 11:42:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:42:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:42:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:42:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.546821000000026, cur_progress: 75
+2017-03-21 11:43:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:43:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:44:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:44:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.546821000000026, cur_progress: 76
+2017-03-21 11:44:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.546821000000026, cur_progress: 77
+2017-03-21 11:44:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.546821000000026, cur_progress: 77
+2017-03-21 11:44:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.547821000000027, cur_progress: 77
+2017-03-21 11:44:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:44:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:44:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.547821000000027, cur_progress: 78
+2017-03-21 11:45:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:45:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:46:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:46:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.547821000000027, cur_progress: 79
+2017-03-21 11:46:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.547821000000027, cur_progress: 80
+2017-03-21 11:46:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.54882100000003, cur_progress: 80
+2017-03-21 11:46:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.54882100000003, cur_progress: 80
+2017-03-21 11:46:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.54882100000003, cur_progress: 80
+2017-03-21 11:46:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.54882100000003, cur_progress: 80
+2017-03-21 11:46:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.54882100000003, cur_progress: 80
+2017-03-21 11:46:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:46:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.54882100000003, cur_progress: 81
+2017-03-21 11:47:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:47:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:48:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:48:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:48:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.54882100000003, cur_progress: 82
+2017-03-21 11:48:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.54882100000003, cur_progress: 83
+2017-03-21 11:48:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.54982100000003, cur_progress: 83
+2017-03-21 11:48:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:48:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:49:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:49:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:49:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:49:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:49:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:52:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:52:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:53:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.54982100000003, cur_progress: 84
+2017-03-21 11:53:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:53:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:59:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:59:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:59:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:59:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.54982100000003, cur_progress: 85
+2017-03-21 11:59:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 11:59:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 12:00:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 12:00:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 12:00:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.54982100000003, cur_progress: 86
+2017-03-21 12:00:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.54982100000003, cur_progress: 87
+2017-03-21 12:00:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.54982100000003, cur_progress: 87
+2017-03-21 12:00:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:00:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:00:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:00:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:00:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:06:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:06:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:06:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.55082100000003, cur_progress: 87
+2017-03-21 12:06:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:06:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:07:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:08:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:08:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.55082100000003, cur_progress: 88
+2017-03-21 12:08:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:08:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:24:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:24:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.55082100000003, cur_progress: 89
+2017-03-21 12:25:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.55082100000003, cur_progress: 90
+2017-03-21 12:25:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.551821000000032, cur_progress: 90
+2017-03-21 12:25:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.551821000000032, cur_progress: 90
+2017-03-21 12:25:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.551821000000032, cur_progress: 90
+2017-03-21 12:31:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.551821000000032, cur_progress: 90
+2017-03-21 12:31:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.551821000000032, cur_progress: 90
+2017-03-21 12:31:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:31:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:32:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:32:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.551821000000032, cur_progress: 91
+2017-03-21 12:32:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 12:32:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 13:31:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.551821000000032, cur_progress: 92
+2017-03-21 13:31:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:31:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:32:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.551821000000032, cur_progress: 93
+2017-03-21 13:32:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.552821000000034, cur_progress: 93
+2017-03-21 13:38:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:39:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.552821000000034, cur_progress: 94
+2017-03-21 13:40:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:40:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.552821000000034, cur_progress: 95
+2017-03-21 13:47:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:47:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.552821000000034, cur_progress: 96
+2017-03-21 13:48:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.552821000000034, cur_progress: 97
+2017-03-21 13:48:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.552821000000034, cur_progress: 97
+2017-03-21 13:48:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:48:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:48:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:48:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:48:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:49:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:49:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:49:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.553821000000035, cur_progress: 97
+2017-03-21 13:49:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.553821000000035, cur_progress: 98
+2017-03-21 13:49:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:49:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.553821000000035, cur_progress: 99
+2017-03-21 13:50:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.553821000000035, cur_progress: 100
+2017-03-21 13:50:54 worker_daemon.py[line:136]
+	INFO poi task #18 finish.
+2017-03-21 14:01:10 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 19
+2017-03-21 14:01:10 worker_daemon.py[line:122]
+	INFO [3247]execute poi task #19.
+2017-03-21 14:01:10 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:01:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:01:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:01:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:01:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:01:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:01:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:01:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:02:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:02:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:02:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:02:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:02:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:02:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:03:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.525821, cur_progress: 3
+2017-03-21 14:03:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:03:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:03:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:04:02 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:04:02 worker_daemon.py[line:122]
+	INFO [3314]execute poi task #20.
+2017-03-21 14:04:02 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:04:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:04:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:04:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:04:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:04:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-21 14:04:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:04:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:04:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:04:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:20 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 14:05:20 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 20
+2017-03-21 14:05:20 worker_daemon.py[line:122]
+	INFO [3726]execute poi task #20.
+2017-03-21 14:05:20 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:05:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.524821, cur_progress: 1
+2017-03-21 14:05:44 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:13:58 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:13:58 worker_daemon.py[line:122]
+	INFO [4530]execute poi task #20.
+2017-03-21 14:13:58 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:14:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.524821, cur_progress: 2
+2017-03-21 14:14:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:50 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:14:50 worker_daemon.py[line:122]
+	INFO [4547]execute poi task #20.
+2017-03-21 14:14:50 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:14:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:14:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.524821, cur_progress: 3
+2017-03-21 14:15:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.525821, cur_progress: 3
+2017-03-21 14:15:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.525821, cur_progress: 3
+2017-03-21 14:15:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:15:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:15:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:15:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:15:26 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:15:26 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:16:48 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:16:48 worker_daemon.py[line:122]
+	INFO [4682]execute poi task #20.
+2017-03-21 14:16:48 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:16:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:16:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:16:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:17:00 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:20:30 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:20:30 worker_daemon.py[line:122]
+	INFO [4817]execute poi task #20.
+2017-03-21 14:20:30 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:20:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:20:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:20:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:20:42 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:22:44 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:22:44 worker_daemon.py[line:122]
+	INFO [4908]execute poi task #20.
+2017-03-21 14:22:44 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:22:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:22:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.525821, cur_progress: 4
+2017-03-21 14:22:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:22:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36837500000007, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:08 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:23:42 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:23:42 worker_daemon.py[line:122]
+	INFO [4909]execute poi task #20.
+2017-03-21 14:23:42 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:23:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937500000008, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37037500000008, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37137500000009, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:23:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000009, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:24:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3733750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:24:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3743750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:24:06 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:24:36 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:24:36 worker_daemon.py[line:122]
+	INFO [4911]execute poi task #20.
+2017-03-21 14:24:36 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:24:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.3753750000001, cur_lat: 30.525821, cur_progress: 5
+2017-03-21 14:24:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37637500000011, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:24:44 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:27:12 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:27:12 worker_daemon.py[line:122]
+	INFO [4912]execute poi task #20.
+2017-03-21 14:27:12 worker_daemon.py[line:128]
+	INFO lon_total: 34, lat_total: 30
+2017-03-21 14:27:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000011, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37837500000012, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937500000012, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38037500000013, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38137500000013, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000014, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38337500000014, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000015, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38537500000015, cur_lat: 30.525821, cur_progress: 6
+2017-03-21 14:27:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38637500000016, cur_lat: 30.525821, cur_progress: 7
+2017-03-21 14:27:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000016, cur_lat: 30.525821, cur_progress: 7
+2017-03-21 14:27:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35537500000001, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35637500000001, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35737500000002, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35837500000002, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.35937500000003, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36037500000003, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36137500000004, cur_lat: 30.526821, cur_progress: 7
+2017-03-21 14:28:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36237500000004, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 14:28:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36337500000005, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 14:28:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000005, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 14:28:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36537500000006, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 14:28:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36637500000006, cur_lat: 30.526821, cur_progress: 8
+2017-03-21 14:28:48 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:29:33 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 14:29:41 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:29:41 worker_daemon.py[line:122]
+	INFO [5283]execute poi task #20.
+2017-03-21 14:29:41 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:29:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36737500000007, cur_lat: 30.526821, cur_progress: 10
+2017-03-21 14:29:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37237500000006, cur_lat: 30.526821, cur_progress: 12
+2017-03-21 14:29:51 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37737500000006, cur_lat: 30.526821, cur_progress: 14
+2017-03-21 14:29:55 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38237500000005, cur_lat: 30.526821, cur_progress: 17
+2017-03-21 14:29:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38737500000005, cur_lat: 30.526821, cur_progress: 19
+2017-03-21 14:30:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.531821, cur_progress: 19
+2017-03-21 14:30:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.531821, cur_progress: 21
+2017-03-21 14:30:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.531821, cur_progress: 24
+2017-03-21 14:30:13 worker_daemon.py[line:174]
+	INFO task #20 paused.
+2017-03-21 14:32:02 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-21 14:32:12 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:32:12 worker_daemon.py[line:122]
+	INFO [5424]execute poi task #20.
+2017-03-21 14:32:12 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:32:14 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:32:32 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:32:32 worker_daemon.py[line:122]
+	INFO [5425]execute poi task #20.
+2017-03-21 14:32:32 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:32:34 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:33:34 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:33:34 worker_daemon.py[line:122]
+	INFO [5426]execute poi task #20.
+2017-03-21 14:33:34 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:33:36 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:37:48 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:37:48 worker_daemon.py[line:122]
+	INFO [5440]execute poi task #20.
+2017-03-21 14:37:48 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:37:50 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:39:59 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:39:59 worker_daemon.py[line:122]
+	INFO [5453]execute poi task #20.
+2017-03-21 14:39:59 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:40:01 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:41:41 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:41:41 worker_daemon.py[line:122]
+	INFO [5458]execute poi task #20.
+2017-03-21 14:41:41 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:41:43 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:42:31 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:42:31 worker_daemon.py[line:122]
+	INFO [5462]execute poi task #20.
+2017-03-21 14:42:31 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:42:33 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:43:19 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:43:19 worker_daemon.py[line:122]
+	INFO [5466]execute poi task #20.
+2017-03-21 14:43:19 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:43:21 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:43:41 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 20
+2017-03-21 14:43:41 worker_daemon.py[line:122]
+	INFO [5467]execute poi task #20.
+2017-03-21 14:43:41 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-21 14:43:43 worker_daemon.py[line:167]
+	INFO poi task #20 error: some reason i don't know
+2017-03-21 14:43:59 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 21
+2017-03-21 14:43:59 worker_daemon.py[line:122]
+	INFO [5468]execute poi task #21.
+2017-03-21 14:43:59 worker_daemon.py[line:128]
+	INFO lon_total: 1, lat_total: 1
+2017-03-21 14:44:01 worker_daemon.py[line:167]
+	INFO poi task #21 error: some reason i don't know
+2017-03-21 14:44:19 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 22
+2017-03-21 14:44:19 worker_daemon.py[line:122]
+	INFO [5470]execute poi task #22.
+2017-03-21 14:44:19 worker_daemon.py[line:128]
+	INFO lon_total: 3, lat_total: 2
+2017-03-21 14:44:21 worker_daemon.py[line:149]
+	INFO cur_lon: 114.340648, cur_lat: 30.543329, cur_progress: 17
+2017-03-21 14:44:25 worker_daemon.py[line:167]
+	INFO poi task #22 error: some reason i don't know

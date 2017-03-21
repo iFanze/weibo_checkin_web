@@ -1,0 +1,882 @@
+2017-03-20 01:15:22 worker_daemon.py[line:26]
+	INFO Worker #1 inited.
+2017-03-20 13:03:55 worker_daemon.py[line:26]
+	INFO Worker #1 inited.
+2017-03-20 13:09:00 worker_daemon.py[line:26]
+	INFO Worker #1 inited.
+2017-03-20 13:24:47 worker_daemon.py[line:70]
+	INFO poi_todo found, taskid: 11
+2017-03-20 13:35:43 worker_daemon.py[line:26]
+	INFO Worker #1 inited.
+2017-03-20 15:40:41 worker_daemon.py[line:70]
+	INFO poi_todo found, taskid: 12
+2017-03-20 15:40:41 worker_daemon.py[line:72]
+	INFO add it to doing_list.
+2017-03-20 15:40:41 worker_daemon.py[line:81]
+	INFO execute poi task. taskid: 12
+2017-03-20 16:43:42 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:50:45 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:50:46 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 16:50:46 worker_daemon.py[line:97]
+	INFO [15107]execute poi task. taskid: 12
+2017-03-20 16:55:50 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:55:50 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 16:55:50 worker_daemon.py[line:97]
+	INFO [15428]execute poi task. taskid: 12
+2017-03-20 16:56:41 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:56:41 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 16:56:41 worker_daemon.py[line:97]
+	INFO [15854]execute poi task. taskid: 12
+2017-03-20 16:58:16 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:58:16 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 16:58:16 worker_daemon.py[line:97]
+	INFO [16148]execute poi task. taskid: 12
+2017-03-20 16:59:21 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 16:59:21 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 16:59:21 worker_daemon.py[line:97]
+	INFO [16239]execute poi task. taskid: 12
+2017-03-20 17:00:00 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 17:01:20 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 19:58:38 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 19:58:58 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 19:58:58 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 19:58:58 worker_daemon.py[line:97]
+	INFO [17684]execute poi task. taskid: 12
+2017-03-20 20:00:16 worker_daemon.py[line:27]
+	INFO Worker #1 inited.
+2017-03-20 20:00:16 worker_daemon.py[line:69]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:00:16 worker_daemon.py[line:97]
+	INFO [17953]execute poi task. taskid: 12
+2017-03-20 20:05:25 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:05:44 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:05:44 worker_daemon.py[line:65]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:06:01 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:19:30 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:19:30 worker_daemon.py[line:65]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:19:30 worker_daemon.py[line:93]
+	INFO [18852]execute poi task #12.
+2017-03-20 20:22:00 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:22:00 worker_daemon.py[line:65]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:22:00 worker_daemon.py[line:93]
+	INFO [18969]execute poi task #12.
+2017-03-20 20:28:09 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:28:09 worker_daemon.py[line:65]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:28:09 worker_daemon.py[line:93]
+	INFO [19190]execute poi task #12.
+2017-03-20 20:31:38 worker_daemon.py[line:23]
+	INFO Worker #1 inited.
+2017-03-20 20:31:38 worker_daemon.py[line:65]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:31:38 worker_daemon.py[line:93]
+	INFO [19342]execute poi task #12.
+2017-03-20 20:42:51 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:42:51 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 12
+2017-03-20 20:42:51 worker_daemon.py[line:110]
+	INFO [19667]execute poi task #12.
+2017-03-20 20:42:51 worker_daemon.py[line:125]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:42:53 worker_daemon.py[line:158]
+	INFO poi task #12 error: debuging
+2017-03-20 20:48:26 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:50:44 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 13
+2017-03-20 20:50:44 worker_daemon.py[line:122]
+	INFO [19865]execute poi task #13.
+2017-03-20 20:50:44 worker_daemon.py[line:128]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:50:46 worker_daemon.py[line:163]
+	INFO poi task #13 error: debuging
+2017-03-20 20:52:47 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:53:33 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 14
+2017-03-20 20:53:33 worker_daemon.py[line:122]
+	INFO [20004]execute poi task #14.
+2017-03-20 20:53:33 worker_daemon.py[line:128]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:53:35 worker_daemon.py[line:163]
+	INFO poi task #14 error: debuging
+2017-03-20 20:55:09 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:55:09 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 14
+2017-03-20 20:55:09 worker_daemon.py[line:122]
+	INFO [20124]execute poi task #14.
+2017-03-20 20:55:09 worker_daemon.py[line:128]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:55:11 worker_daemon.py[line:163]
+	INFO poi task #14 error: debuging
+2017-03-20 20:55:55 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:55:55 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 14
+2017-03-20 20:55:55 worker_daemon.py[line:122]
+	INFO [20296]execute poi task #14.
+2017-03-20 20:55:55 worker_daemon.py[line:128]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:55:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:55:57 worker_daemon.py[line:163]
+	INFO poi task #14 error: debuging
+2017-03-20 20:56:31 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 20:56:31 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 14
+2017-03-20 20:56:31 worker_daemon.py[line:122]
+	INFO [20407]execute poi task #14.
+2017-03-20 20:56:31 worker_daemon.py[line:128]
+	INFO lon_total: 334, lat_total: 299
+2017-03-20 20:56:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35447500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35457500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35467500000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35477500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:53 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35487500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:56:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35497500000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:01 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35507500000003, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:05 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35517500000003, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:09 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35527500000003, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:13 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35537500000004, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:17 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35547500000004, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:21 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35557500000004, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:25 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35567500000005, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:29 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35577500000005, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35587500000005, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35597500000006, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35607500000006, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35617500000006, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35627500000007, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:53 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35637500000007, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:57:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35647500000007, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:01 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35657500000008, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:05 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35667500000008, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:09 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35677500000008, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:13 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35687500000009, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:17 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35697500000009, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:21 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3570750000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:25 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3571750000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:29 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3572750000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3573750000001, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35747500000011, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35757500000011, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35767500000011, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35777500000012, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:53 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35787500000012, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:58:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35797500000012, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:01 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35807500000013, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:05 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35817500000013, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:09 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35827500000013, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:13 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35837500000014, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:17 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35847500000014, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:21 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35857500000014, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:25 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35867500000015, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:29 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35877500000015, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35887500000015, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35897500000016, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35907500000016, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35917500000016, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35927500000017, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:53 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35937500000017, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 20:59:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35947500000017, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:01 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35957500000018, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:05 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35967500000018, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:09 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35977500000018, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:13 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35987500000019, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:17 worker_daemon.py[line:146]
+	INFO cur_lon: 114.35997500000019, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:21 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3600750000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:25 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3601750000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:29 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3602750000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3603750000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.3604750000002, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36057500000021, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36067500000021, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36077500000022, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:53 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36087500000022, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:00:57 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36097500000022, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:01 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36107500000023, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:05 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36117500000023, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:09 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36127500000023, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:13 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36137500000024, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:17 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36147500000024, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:21 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36157500000024, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:25 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36167500000025, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:29 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36177500000025, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:33 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36187500000025, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36197500000026, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:41 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36207500000026, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:45 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36217500000026, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:01:49 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36227500000027, cur_lat: 30.524821, cur_progress: 0
+2017-03-20 21:02:03 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 21:02:35 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 21:02:35 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 14
+2017-03-20 21:02:35 worker_daemon.py[line:122]
+	INFO [20842]execute poi task #14.
+2017-03-20 21:02:35 worker_daemon.py[line:128]
+	INFO lon_total: 1, lat_total: 1
+2017-03-20 21:02:37 worker_daemon.py[line:146]
+	INFO cur_lon: 114.36237500000027, cur_lat: 30.524821, cur_progress: 100
+2017-03-20 21:04:47 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 21:04:47 worker_daemon.py[line:82]
+	INFO poi last_doing found, taskid: 14
+2017-03-20 21:04:47 worker_daemon.py[line:122]
+	INFO [21012]execute poi task #14.
+2017-03-20 21:04:47 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-20 21:04:47 worker_daemon.py[line:136]
+	INFO poi task #14 finish.
+2017-03-20 21:17:31 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 15
+2017-03-20 21:17:31 worker_daemon.py[line:122]
+	INFO [21205]execute poi task #15.
+2017-03-20 21:17:31 worker_daemon.py[line:128]
+	INFO lon_total: 7, lat_total: 6
+2017-03-20 21:17:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 2
+2017-03-20 21:17:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.524821, cur_progress: 5
+2017-03-20 21:17:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.524821, cur_progress: 7
+2017-03-20 21:17:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.524821, cur_progress: 10
+2017-03-20 21:17:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.524821, cur_progress: 12
+2017-03-20 21:17:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.524821, cur_progress: 14
+2017-03-20 21:17:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.524821, cur_progress: 17
+2017-03-20 21:18:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.529821, cur_progress: 19
+2017-03-20 21:18:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.529821, cur_progress: 21
+2017-03-20 21:18:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.529821, cur_progress: 24
+2017-03-20 21:18:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.529821, cur_progress: 26
+2017-03-20 21:18:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.529821, cur_progress: 29
+2017-03-20 21:18:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.529821, cur_progress: 31
+2017-03-20 21:18:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.529821, cur_progress: 33
+2017-03-20 21:18:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534820999999997, cur_progress: 36
+2017-03-20 21:18:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.534820999999997, cur_progress: 38
+2017-03-20 21:18:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.534820999999997, cur_progress: 40
+2017-03-20 21:18:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.534820999999997, cur_progress: 43
+2017-03-20 21:18:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.534820999999997, cur_progress: 45
+2017-03-20 21:18:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.534820999999997, cur_progress: 48
+2017-03-20 21:18:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.534820999999997, cur_progress: 50
+2017-03-20 21:18:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.539820999999996, cur_progress: 52
+2017-03-20 21:19:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.539820999999996, cur_progress: 55
+2017-03-20 21:19:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.539820999999996, cur_progress: 57
+2017-03-20 21:19:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.539820999999996, cur_progress: 60
+2017-03-20 21:19:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.539820999999996, cur_progress: 62
+2017-03-20 21:19:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.539820999999996, cur_progress: 64
+2017-03-20 21:19:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.539820999999996, cur_progress: 67
+2017-03-20 21:19:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544820999999995, cur_progress: 69
+2017-03-20 21:19:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.544820999999995, cur_progress: 71
+2017-03-20 21:19:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.544820999999995, cur_progress: 74
+2017-03-20 21:19:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.544820999999995, cur_progress: 76
+2017-03-20 21:19:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.544820999999995, cur_progress: 79
+2017-03-20 21:19:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.544820999999995, cur_progress: 81
+2017-03-20 21:19:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.544820999999995, cur_progress: 83
+2017-03-20 21:19:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.549820999999994, cur_progress: 86
+2017-03-20 21:19:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.359375, cur_lat: 30.549820999999994, cur_progress: 88
+2017-03-20 21:20:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.364375, cur_lat: 30.549820999999994, cur_progress: 90
+2017-03-20 21:20:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36937499999999, cur_lat: 30.549820999999994, cur_progress: 93
+2017-03-20 21:20:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437499999999, cur_lat: 30.549820999999994, cur_progress: 95
+2017-03-20 21:20:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37937499999998, cur_lat: 30.549820999999994, cur_progress: 98
+2017-03-20 21:20:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437499999998, cur_lat: 30.549820999999994, cur_progress: 100
+2017-03-20 21:20:19 worker_daemon.py[line:136]
+	INFO poi task #15 finish.
+2017-03-20 23:42:56 worker_daemon.py[line:40]
+	INFO Worker #1 inited.
+2017-03-20 23:43:08 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 1
+2017-03-20 23:43:08 worker_daemon.py[line:122]
+	INFO [1563]execute poi task #1.
+2017-03-20 23:43:08 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-20 23:43:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-20 23:43:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-20 23:43:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-20 23:43:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-20 23:43:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-20 23:43:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-20 23:43:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-20 23:43:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-20 23:43:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-20 23:43:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-20 23:43:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-20 23:43:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-20 23:43:56 worker_daemon.py[line:136]
+	INFO poi task #1 finish.
+2017-03-20 23:49:56 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 2
+2017-03-20 23:49:56 worker_daemon.py[line:122]
+	INFO [1789]execute poi task #2.
+2017-03-20 23:49:56 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-20 23:49:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-20 23:50:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-20 23:50:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-20 23:50:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-20 23:50:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-20 23:50:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-20 23:50:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-20 23:50:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-20 23:50:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-20 23:50:34 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-20 23:50:38 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-20 23:50:42 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-20 23:50:44 worker_daemon.py[line:136]
+	INFO poi task #2 finish.
+2017-03-21 01:07:57 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 3
+2017-03-21 01:07:57 worker_daemon.py[line:122]
+	INFO [2821]execute poi task #3.
+2017-03-21 01:07:57 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:07:59 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:08:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:08:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:08:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:08:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:08:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:08:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:08:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:08:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:08:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:08:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:08:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:08:45 worker_daemon.py[line:136]
+	INFO poi task #3 finish.
+2017-03-21 01:19:01 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 4
+2017-03-21 01:19:01 worker_daemon.py[line:122]
+	INFO [2844]execute poi task #4.
+2017-03-21 01:19:01 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:19:03 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:19:07 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:19:11 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:19:15 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:19:19 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:19:23 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:19:27 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:19:31 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:19:35 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:19:39 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:19:43 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:19:47 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:19:49 worker_daemon.py[line:136]
+	INFO poi task #4 finish.
+2017-03-21 01:20:19 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 5
+2017-03-21 01:20:19 worker_daemon.py[line:122]
+	INFO [2846]execute poi task #5.
+2017-03-21 01:20:19 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:20:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:20:25 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:20:29 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:20:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:20:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:20:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:20:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:20:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:20:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:20:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:21:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:21:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:21:07 worker_daemon.py[line:136]
+	INFO poi task #5 finish.
+2017-03-21 01:27:35 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 6
+2017-03-21 01:27:35 worker_daemon.py[line:122]
+	INFO [2876]execute poi task #6.
+2017-03-21 01:27:35 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:27:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:27:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:27:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:27:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:27:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:27:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:28:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:28:05 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:28:09 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:28:13 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:28:17 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:28:21 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:28:23 worker_daemon.py[line:136]
+	INFO poi task #6 finish.
+2017-03-21 01:28:31 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 7
+2017-03-21 01:28:31 worker_daemon.py[line:122]
+	INFO [2879]execute poi task #7.
+2017-03-21 01:28:31 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:28:33 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:28:37 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:28:41 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:28:45 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:28:49 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:28:53 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:28:57 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:29:01 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:29:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:29:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:29:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:29:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:29:20 worker_daemon.py[line:136]
+	INFO poi task #7 finish.
+2017-03-21 01:29:50 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 8
+2017-03-21 01:29:50 worker_daemon.py[line:122]
+	INFO [2883]execute poi task #8.
+2017-03-21 01:29:50 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:29:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:29:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:30:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:30:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:30:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:30:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:30:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:30:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:30:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:30:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:30:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:30:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:30:38 worker_daemon.py[line:136]
+	INFO poi task #8 finish.
+2017-03-21 01:31:22 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 9
+2017-03-21 01:31:22 worker_daemon.py[line:122]
+	INFO [2889]execute poi task #9.
+2017-03-21 01:31:22 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:31:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:31:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:31:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:31:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:31:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:31:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:31:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:31:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:31:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:32:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:32:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:32:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:32:10 worker_daemon.py[line:136]
+	INFO poi task #9 finish.
+2017-03-21 01:33:02 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 10
+2017-03-21 01:33:02 worker_daemon.py[line:122]
+	INFO [2905]execute poi task #10.
+2017-03-21 01:33:02 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:33:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:33:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:33:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:33:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:33:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:33:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:33:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:33:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:33:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:33:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:33:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:33:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:33:50 worker_daemon.py[line:136]
+	INFO poi task #10 finish.
+2017-03-21 01:38:44 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 11
+2017-03-21 01:38:44 worker_daemon.py[line:122]
+	INFO [2946]execute poi task #11.
+2017-03-21 01:38:44 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:38:46 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:38:50 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:38:54 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:38:58 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:39:02 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:39:06 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:39:10 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:39:14 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:39:18 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:39:22 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:39:26 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:39:30 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:39:32 worker_daemon.py[line:136]
+	INFO poi task #11 finish.
+2017-03-21 01:43:50 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 12
+2017-03-21 01:43:50 worker_daemon.py[line:122]
+	INFO [2958]execute poi task #12.
+2017-03-21 01:43:50 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:43:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:43:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:44:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:44:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:44:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:44:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:44:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:44:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:44:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:44:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:44:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:44:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:44:38 worker_daemon.py[line:136]
+	INFO poi task #12 finish.
+2017-03-21 01:44:54 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 13
+2017-03-21 01:44:54 worker_daemon.py[line:122]
+	INFO [2964]execute poi task #13.
+2017-03-21 01:44:54 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:44:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:45:00 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:45:04 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:45:08 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:45:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:45:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:45:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:45:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:45:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:45:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:45:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:45:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:45:42 worker_daemon.py[line:136]
+	INFO poi task #13 finish.
+2017-03-21 01:53:10 worker_daemon.py[line:92]
+	INFO poi_todo found, taskid: 14
+2017-03-21 01:53:10 worker_daemon.py[line:122]
+	INFO [2983]execute poi task #14.
+2017-03-21 01:53:10 worker_daemon.py[line:128]
+	INFO lon_total: 4, lat_total: 3
+2017-03-21 01:53:12 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.524821, cur_progress: 8
+2017-03-21 01:53:16 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.524821, cur_progress: 17
+2017-03-21 01:53:20 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.524821, cur_progress: 25
+2017-03-21 01:53:24 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.524821, cur_progress: 33
+2017-03-21 01:53:28 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.534821, cur_progress: 42
+2017-03-21 01:53:32 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.534821, cur_progress: 50
+2017-03-21 01:53:36 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.534821, cur_progress: 58
+2017-03-21 01:53:40 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.534821, cur_progress: 67
+2017-03-21 01:53:44 worker_daemon.py[line:147]
+	INFO cur_lon: 114.354375, cur_lat: 30.544821000000002, cur_progress: 75
+2017-03-21 01:53:48 worker_daemon.py[line:147]
+	INFO cur_lon: 114.36437500000001, cur_lat: 30.544821000000002, cur_progress: 83
+2017-03-21 01:53:52 worker_daemon.py[line:147]
+	INFO cur_lon: 114.37437500000001, cur_lat: 30.544821000000002, cur_progress: 92
+2017-03-21 01:53:56 worker_daemon.py[line:147]
+	INFO cur_lon: 114.38437500000002, cur_lat: 30.544821000000002, cur_progress: 100
+2017-03-21 01:53:58 worker_daemon.py[line:136]
+	INFO poi task #14 finish.
