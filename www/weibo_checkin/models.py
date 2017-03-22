@@ -31,8 +31,20 @@ class POITask(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     start_time = models.DateTimeField(null=True)
     end_time = models.DateTimeField(null=True)
-    poi_count = models.IntegerField(default=0)
+    # poi_count = models.IntegerField(default=0)
     poi_add_count = models.IntegerField(default=0)
+
+
+class POI(models.Model):
+    poiid = models.CharField(max_length=30, primary_key=True)
+    title = models.CharField(max_length=200)
+    category_name = models.CharField(max_length=10)
+    lon = models.DecimalField(max_digits=9, decimal_places=6)
+    lat = models.DecimalField(max_digits=9, decimal_places=6)
+    icon = models.CharField(max_length=200)
+    poi_pic = models.CharField(max_length=200)
+    area = models.ForeignKey(Area, on_delete=models.SET_NULL, null=True)
+    task = models.ForeignKey(POITask, on_delete=models.CASCADE)
 
 
 # class POITaskWorker(models.Model):

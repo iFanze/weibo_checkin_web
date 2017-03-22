@@ -6,13 +6,13 @@
     <input type="hidden" id="minlon_of_{{ area.id }}" value="{{ area.min_lon }}">
     <input type="hidden" id="maxlat_of_{{ area.id }}" value="{{ area.max_lat }}">
     <input type="hidden" id="maxlon_of_{{ area.id }}" value="{{ area.max_lon }}">
-    <input type="hidden" id="poicount_of_{{ area.id }}" value="{{ area.poi_count }}">
+    <!-- <input type="hidden" id="poicount_of_{{ area.id }}" value=""> -->
     <a href="#"><span class="uk-margin-small-right uk-icon" uk-icon="icon: home"></span><strong>{{ area.name }}</strong><span class="uk-label uk-label-success" id="area-label-{{ area.id }}" style="display: none">更新中</span> </a>
     <ul class="uk-nav-sub">
         <li>
             <div><strong>最近更新：</strong>{% if area.last_updated_at|date:"Y-m-d H:i:s" == area.created_at|date:"Y-m-d H:i:s" %} 无 {% else %} {{ area.last_updated_at|date:"Y-m-d H:i:s" }} {% endif %}</div>
         </li>
-        <li><strong>POI数量：</strong>{{ area.poi_count }}</li>
+        <li><strong>POI数量：</strong>0</li>
         <li>
             <div class="uk-button-group" style="width:100%">
                 <a class="uk-button uk-button-primary uk-button-small" href="javascript:void(0)" onclick="select_area({{ area.id }})" style="width:33%;color: white"><span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span>使用</a>

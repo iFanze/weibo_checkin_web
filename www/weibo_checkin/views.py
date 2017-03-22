@@ -154,6 +154,7 @@ def update_area(request):
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lat", area.min_lat)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lon", area.min_lon)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "progress", 0)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "poi_add_count", 0)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "errormsg", "")
 
     # 3. 执行任务。
@@ -202,7 +203,7 @@ def get_pois_task(request):
             else:
                 item["show_button"] = "pause"
             item["progress"] = task[0].progress
-            item["poi_count"] = task[0].poi_count
+            # item["poi_count"] = task[0].poi_count
             item["poi_add_count"] = task[0].poi_add_count
             item["last_error"] = task[0].last_error
         res.append(item)

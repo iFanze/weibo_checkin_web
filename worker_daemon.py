@@ -7,10 +7,13 @@ import MySQLdb
 
 from worker_config import config
 from daemon import Daemon
+from weibo_login import WeiboLoginError, WeiboLogin
+from weibo import APIError, APIClient
 
 
 class JsonDict(dict):
     """ general json object that allows attributes to be bound to and also behaves like a dict """
+
     def __getattr__(self, attr):
         try:
             return self[attr]
@@ -37,10 +40,12 @@ class WorkerDaemon(Daemon):
         self.redis_conn = redis.Redis(host='localhost', port=6379, db=0,
                                       decode_responses=True)
         self.doing_list = []
+        self.weibo_client = None
         logging.info("Worker #%s inited." % workerid)
 
-    def mysql_select(self, sql, args, size=None):
-        logging.info(sql + '\n\t' + (args or ""))
+    def mysql_select(self, sql, args, size=None, log=True):
+        if log:
+            logging.info(sql + '\n\t' + (args or ""))
         cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
         try:
             cur.execute(sql.replace('?', '%s'), args or ())
@@ -55,11 +60,17 @@ class WorkerDaemon(Daemon):
             raise
         finally:
             cur.close()
-        logging.info('rows returned: %s' % len(rs))
+        if log:
+            if rs:
+                rss = len(rs)
+            else:
+                rss = 0
+            logging.info('rows returned: %s' % rss)
         return rs
 
-    def mysql_execute(self, sql, args):
-        logging.info(sql + '\n\t' + str(args))
+    def mysql_execute(self, sql, args, log=True):
+        if log:
+            logging.info(sql + '\n\t' + str(args))
         cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
         try:
             cur.execute(sql.replace('?', '%s'), args)
@@ -69,11 +80,19 @@ class WorkerDaemon(Daemon):
             raise
         finally:
             cur.close()
-        logging.info('rows affected: %s' % affected)
+        if log:
+            logging.info('rows affected: %s' % affected)
         return affected
 
     def run(self):
         """ 运行worker """
+
+        self.get_weibo_token(config["weibo_apps"][0]["app_key"],
+                             config["weibo_apps"][0]["app_secret"],
+                             config["weibo_apps"][0]["callback_url"],
+                             config["weibo_apps"][0]["accounts"][0]["username"],
+                             config["weibo_apps"][0]["accounts"][0]["password"],
+                             )
 
         # 如果程序意外退出，需要继续处理仍留在doing_list中的任务。
         last_doing = self.redis_conn.lrange("poi_worker_" + str(self.worker_id) + "_doing_list", 0, -1)
@@ -86,6 +105,9 @@ class WorkerDaemon(Daemon):
         while True:
             sys.stdout.write('.')
             sys.stdout.flush()
+
+            self.mysql_conn.ping(True)
+
             # 弹出poi_worker_1_todo_list。
             todo = self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_todo_list")
             if todo:
@@ -110,6 +132,62 @@ class WorkerDaemon(Daemon):
         task.min_lat = float(task.min_lat)
         task.progress = int(task.progress)
         return task
+
+    def get_weibo_token(self, appkey, appsecret, url, username, password):
+        logging.info("preparing weibo OAuth2:")
+        logging.info("appkey: %s username: %s" % (appkey, username))
+        self.weibo_client = APIClient(app_key=appkey, app_secret=appsecret, redirect_uri=url)
+        code = WeiboLogin(username, password, appkey, url).get_code()
+        logging.info("code: %s" % code)
+        r = self.weibo_client.request_access_token(code)
+        self.weibo_client.set_access_token(r.access_token, r.expires_in)
+        logging.info("token: %s" % r.access_token)
+
+    def save_poi(self, poi, taskid):
+        sql = "SELECT `task_id` from `weibo_checkin_poi` where `poiid` = ?"
+        res = self.mysql_select(sql, (poi["poiid"],))
+        if len(res) == 0:
+            return False
+        sql = "INSERT INTO `weibo_checkin_poi` " + \
+              "(`poiid`, `title`, `category_name`, `lon`, `lat`, `icon`, `poi_pic`, `task_id`)" + \
+              "VALUES(?,?,?,?,?,?,?,?)"
+        args = (poi["poiid"], poi["title"], poi["category_name"], float(poi["lon"]), float(poi["lat"]),
+                poi["icon"], poi["poi_pic"], taskid)
+        res = self.mysql_execute(sql, args)
+        if res == 1:
+            self.redis_conn.hincrby("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id), "poi_add_count")
+            return True
+        return False
+
+    def get_pois_at(self, lon, lat, taskid):
+        time.sleep(2)  # 下载数据
+        if self.weibo_client.is_expires():
+            self.get_weibo_token(config["weibo_apps"][0]["app_key"],
+                                 config["weibo_apps"][0]["app_secret"],
+                                 config["weibo_apps"][0]["callback_url"],
+                                 config["weibo_apps"][0]["accounts"][0]["username"],
+                                 config["weibo_apps"][0]["accounts"][0]["password"],
+                                 )
+        page = 1
+        res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page)
+        while res:
+            total = 0
+            for item in res["pois"]:
+                if self.save_poi(item, taskid):
+                    total += 1
+            logging.info("lon: %s, lat: %s, page: %s, total: %s, add: %s" %
+                         (lon, lat, page, len(res["pois"]), total))
+
+            page += 1
+            if self.weibo_client.is_expires():
+                self.get_weibo_token(config["weibo_apps"][0]["app_key"],
+                                     config["weibo_apps"][0]["app_secret"],
+                                     config["weibo_apps"][0]["callback_url"],
+                                     config["weibo_apps"][0]["accounts"][0]["username"],
+                                     config["weibo_apps"][0]["accounts"][0]["password"],
+                                     )
+            time.sleep(2)
+            res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page)
 
     def execute_poi_task(self, taskid):
         """ 开始/继续一个任务 """
@@ -136,13 +214,15 @@ class WorkerDaemon(Daemon):
                         logging.info("poi task #%s finish." % taskid)
                         sys.exit()
                     try:
-                        time.sleep(2)   # 下载数据
+                        # 下载数据
+                        self.get_pois_at(task.cur_lon, task.cur_lat, taskid)
+
                         # 计算progress
                         lon = round((task.cur_lon - task.min_lon) / self.delta_latlon) + 1
                         lat = round((task.cur_lat - task.min_lat) / self.delta_latlon) + 1
                         progress = round((lon_total * (lat - 1) + lon) / (lat_total * lon_total) * 100)
-                        if progress > 20:
-                            raise
+                        # if progress > 20:
+                        #     raise WeiboLoginError(0, "test error. (progress > 20)")
                         self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
                                              "progress", progress)
                         logging.info("cur_lon: %s, cur_lat: %s, cur_progress: %s" %
@@ -159,14 +239,21 @@ class WorkerDaemon(Daemon):
                                              "cur_lat", new_lat)
 
                         task = self.get_poi_task_x_worker_self(taskid)
-
-                    except BaseException as e:
+                    except WeiboLoginError as e:
+                        errmsg = str(e)
+                        self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
+                        logging.info("poi task #%s error: %s" % (taskid, errmsg))
+                        self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
+                                             "errormsg", errmsg)
+                        sys.exit()
+                    except BaseException:
                         # 任务出错
                         errmsg = "some reason i don't know"
                         self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
                         logging.info("poi task #%s error: %s" % (taskid, errmsg))
                         self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
                                              "errormsg", errmsg)
+                        raise
                         sys.exit()
                     time.sleep(2)  # 每次网络请求的间隔
                 # 由于用户主动暂停而终止：

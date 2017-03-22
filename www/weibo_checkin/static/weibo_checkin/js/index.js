@@ -90,17 +90,14 @@ function init_draw_mode() {
 
 function draw_complete(e) {
     draw_layers.push(e.overlay);
-    //lat
-    var de = e.overlay.Nu.De;
-    var ie = e.overlay.Nu.Ie;
-    //lon
-    var ee = e.overlay.Nu.Ee;
-    var je = e.overlay.Nu.Je;
 
-    var minlat = (de > ie) ? ie : de;
-    var maxlat = (de < ie) ? ie : de;
-    var minlon = (ee > je) ? je : ee;
-    var maxlon = (ee < je) ? je : ee;
+    sw = e.overlay.getBounds().getSouthWest();
+    ne = e.overlay.getBounds().getNorthEast();
+
+    var minlat = sw.lat;
+    var maxlat = ne.lat;
+    var minlon = sw.lng;
+    var maxlon = ne.lng;
 
     drawing_manager.close();
     if (confirm("确定添加区域『" + new_area_name + "』？")) {

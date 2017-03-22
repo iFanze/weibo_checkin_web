@@ -32,7 +32,11 @@ class WebDaemon(Daemon):
             raise
         finally:
             cur.close()
-        logging.info('rows returned: %s' % len(rs))
+        if rs:
+            rss = len(rs)
+        else:
+            rss = 0
+        logging.info('rows returned: %s' % rss)
         return rs
 
     def mysql_execute(self, sql, args, autocommit=True):
