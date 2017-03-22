@@ -117,15 +117,20 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
         logging.info("token: %s" % r.access_token)
 
     def save_poi(self, poi, taskid):
+        sql = "SELECT `area_id` from `weibo_checkin_poitask` where `id` = ?"
+        sql = "SELECT `area_id` from `weibo_checkin_poitask` where `id` = ?"
+        res = self.mysql_select(sql, (taskid,), 1, log=False)
+        areaid = int(res["area_id"])
         sql = "SELECT `task_id` from `weibo_checkin_poi` where `poiid` = ?"
         res = self.mysql_select(sql, (poi["poiid"],), log=False)
         if len(res) != 0:
             return False
         sql = "INSERT INTO `weibo_checkin_poi` " + \
-              "(`poiid`, `title`, `category_name`, `lon`, `lat`, `icon`, `poi_pic`, `task_id`)" + \
-              "VALUES(?,?,?,?,?,?,?,?)"
-        args = (poi["poiid"], poi["title"], poi["category_name"], float(poi["lon"]), float(poi["lat"]),
-                poi["icon"], poi["poi_pic"], taskid)
+              "(`poiid`, `title`, `area_id`, `category_name`, `lon`, `lat`, " + \
+              "`icon`, `poi_pic`, `task_id`, `checkin_user_num`, `checkin_num`)" + \
+              "VALUES(?,?,?,?,?,?,?,?,?,?,?)"
+        args = (poi["poiid"], poi["title"], areaid, poi["category_name"], float(poi["lon"]), float(poi["lat"]),
+                poi["icon"], poi["poi_pic"], taskid, int(poi["checkin_user_num"]), int(poi["checkin_num"]))
         res = self.mysql_execute(sql, args, log=False)
         if res == 1:
             self.redis_conn.hincrby("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id), "poi_add_count")
