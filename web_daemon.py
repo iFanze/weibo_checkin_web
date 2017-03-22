@@ -47,6 +47,7 @@ class WebDaemon(Daemon, MySQLConn, RedisConn):
                         if self.redis_lfind("poi_worker_" + str(worker) + "_doing_list", task_doing) < 0:
                             is_paused += 1
                     if is_paused == workers_count:
+                        # 所有worker都已暂停
                         self.redis_conn.lrem("poi_task_doing_list", task_doing)
                         self.mysql_execute("update `weibo_checkin_poitask` set `status`= 3, `last_error` = '用户暂停' " +
                                            "where id = ?",
@@ -60,24 +61,28 @@ class WebDaemon(Daemon, MySQLConn, RedisConn):
 
                 # 任务1：更新progress
                 avg_progress = 0
+                total_add = 0
                 for worker in workers:
                     progress = self.redis_conn.hget("poi_task_" + task_doing + "_worker_" + worker, "progress")
                     avg_progress += int(progress)
+                    total_add += int(self.redis_conn.hget("poi_task_" + task_doing + "_worker_" + worker,
+                                                          "poi_add_count"))
                 avg_progress /= workers_count
                 avg_progress = int(avg_progress)
-                logging.info("worker #%s progress: %s%%" % (worker, avg_progress))
+                logging.info("task #%s progress: %s%%, poi add: %s" % (task_doing, avg_progress, total_add))
 
-                self.mysql_execute("update `weibo_checkin_poitask` set `progress`= ? where id = ?",
-                                   (avg_progress, task_doing))
-                logging.info("\tthe progress of task #%s: %s%%" % (task_doing, avg_progress))
+                self.mysql_execute("update `weibo_checkin_poitask` set `progress`= ?, `poi_add_count` = ? where id = ?",
+                                   (avg_progress, total_add, task_doing))
 
                 # 任务2：监控worker
                 is_done = 0
                 error_found = False
                 error_list = []
                 for worker in workers:
+                    # 有worker还没开始
                     if 0 <= self.redis_lfind("poi_worker_" + worker + "_todo_list", task_doing):
                         continue
+                    # 有worker还没结束
                     if 0 <= self.redis_lfind("poi_worker_" + worker + "_doing_list", task_doing):
                         continue
                     errormsg = self.redis_conn.hget("poi_task_" + task_doing + "_worker_" + worker, "errormsg")
@@ -85,20 +90,31 @@ class WebDaemon(Daemon, MySQLConn, RedisConn):
                         error_found = True
                         error_list.append("Worker #%s error: %s" % (worker, errormsg))
                     is_done += 1
+
+                # 只有部分worker停止工作。
                 if is_done != workers_count:
                     logging.info("%s of %s workers is done." % (is_done, workers_count))
                     continue
 
+                # 运行到这里已经没有worker在工作了。
                 if error_found:
                     # 所有worker完成，但是出现了错误。
                     logging.info("all workers done with error found: %s" % error_list)
                     self.mysql_execute("update `weibo_checkin_poitask` set `status` = 3, `last_error` = ? where id = ?",
                                        (';'.join(error_list), task_doing))
                 else:
-                    # 所有worker顺利完成。
+                    # 所有worker顺利完成。更新task的状态和area的POI总数。
                     logging.info("all workers done without error.")
                     self.mysql_execute("update `weibo_checkin_poitask` set `status` = 4, `last_error` = '' " +
                                        "where id = ?", (task_doing,))
+                    sql = "SELECT `area_id` from `weibo_checkin_poitask` where `id` = ?"
+                    res = self.mysql_select(sql, (task_doing,), 1, log=False)
+                    areaid = int(res["area_id"])
+                    sql = "SELECT count(*) count from `weibo_checkin_poitask` where `area_id` = ?"
+                    res = self.mysql_select(sql, (areaid,), 1)
+                    count = res["count"]
+                    self.mysql_execute("update `weibo_checkin_area` set `poi_count` = ? " +
+                                       "where id = ?", (count, areaid))
 
                 # 从doing_list清除，不再监控。
                 self.redis_conn.lrem("poi_task_doing_list", task_doing)
