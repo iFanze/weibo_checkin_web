@@ -2,68 +2,21 @@ import logging
 import sys
 import os
 import time
-import redis
-import MySQLdb
 
 from daemon import Daemon
+from mysql_conn import MySQLConn
+from redis_conn import RedisConn
 
 
-class WebDaemon(Daemon):
+class WebDaemon(Daemon, MySQLConn, RedisConn):
     def __init__(self, pidfile, stdin=os.devnull, stdout=os.devnull, stderr=os.devnull):
-        super().__init__(pidfile, stdin, stdout, stderr)
-        self.mysql_conn = MySQLdb.connect(host="localhost", user="root",
-                                          passwd="admin", db="weibo_checkin")
-        self.redis_conn = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+        # 初始化Daemon
+        super(WebDaemon, self).__init__(pidfile, stdin, stdout, stderr)
+        # 初始化MySQLConn
+        super(Daemon, self).__init__(db="weibo_checkin", user="root", passwd="admin")
+        # 初始化Redis
+        super(MySQLConn, self).__init__()
         logging.info("web daemon init.")
-
-    def mysql_select(self, sql, args, size=None):
-        logging.info(sql + '\n\t' + (args or ""))
-        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
-        try:
-            cur.execute(sql.replace('?', '%s'), args or ())
-            if size:
-                if size == 1:
-                    rs = cur.fetchone()
-                else:
-                    rs = cur.fetchmany(size)
-            else:
-                rs = cur.fetchall()
-        except BaseException as e:
-            raise
-        finally:
-            cur.close()
-        if rs:
-            rss = len(rs)
-        else:
-            rss = 0
-        logging.info('rows returned: %s' % rss)
-        return rs
-
-    def mysql_execute(self, sql, args, autocommit=True):
-        logging.info(sql + '\n\t' + str(args))
-        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
-        try:
-            cur.execute(sql.replace('?', '%s'), args)
-            affected = cur.rowcount
-            if autocommit:
-                self.mysql_conn.commit()
-        except BaseException as e:
-            print(e)
-            print("Unexpected error:", sys.exc_info()[0])
-            raise
-        finally:
-            cur.close()
-        logging.info('rows affected: %s' % affected)
-        return affected
-
-    def redis_lfind(self, key, value):
-        if not self.redis_conn.exists(key):
-            return -2
-        length = self.redis_conn.llen(key)
-        for i in range(length):
-            if value == self.redis_conn.lindex(key, i):
-                return i
-        return -1
 
     def run(self):
         while True:
@@ -101,6 +54,7 @@ class WebDaemon(Daemon):
                         self.redis_conn.delete("poi_" + str(task_doing) + "_to_pause")
                         break
                     else:
+                        time.sleep(2)
                         continue
                     logging.info("task #%s paused successfully." % task_doing)
 
@@ -157,7 +111,7 @@ if __name__ == '__main__':
         level=logging.INFO,
         format='%(asctime)s %(filename)s[line:%(lineno)d]\n\t%(levelname)s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
-        filename='web_daemon_%s.log' % (time.strftime("%Y-%m-%d", time.localtime()),)
+        filename='log/web_daemon_%s.log' % (time.strftime("%Y-%m-%d", time.localtime()),)
     )
 
     # 守护进程

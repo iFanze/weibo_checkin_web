@@ -2,13 +2,15 @@ import logging
 import sys
 import os
 import time
-import redis
-import MySQLdb
 
 from worker_config import config
-from daemon import Daemon
+
 from weibo_login import WeiboLoginError, WeiboLogin
 from weibo import APIError, APIClient
+
+from daemon import Daemon
+from mysql_conn import MySQLConn
+from redis_conn import RedisConn
 
 
 class JsonDict(dict):
@@ -29,60 +31,31 @@ class JsonDict(dict):
             self.__setattr__(key, dictionary[key])
 
 
-class WorkerDaemon(Daemon):
+class WorkerDaemon(Daemon, MySQLConn, RedisConn):
     def __init__(self, pidfile, workerid, stdin=os.devnull, stdout=os.devnull, stderr=os.devnull):
-        super().__init__(pidfile, stdin, stdout, stderr)
+        # 初始化Daemon
+        super(WorkerDaemon, self).__init__(pidfile, stdin, stdout, stderr)
+        # 初始化MySQLConn
+        super(Daemon, self).__init__(config["mysql_config"]["host"],
+                                     config["mysql_config"]["port"],
+                                     config["mysql_config"]["db"],
+                                     config["mysql_config"]["username"],
+                                     config["mysql_config"]["password"])
+        # 初始化Redis
+        super(MySQLConn, self).__init__(config["redis_config"]["host"],
+                                        config["redis_config"]["port"],
+                                        config["redis_config"]["db"], )
+
         self.worker_id = workerid
         self.weibo_apps = []
         self.delta_latlon = 0.005
-        self.mysql_conn = MySQLdb.connect(host="localhost", user="root",
-                                          passwd="admin", db="weibo_checkin")
-        self.redis_conn = redis.Redis(host='localhost', port=6379, db=0,
-                                      decode_responses=True)
+        # self.mysql_conn = MySQLdb.connect(host="localhost", user="root",
+        #                                   passwd="admin", db="weibo_checkin")
+        # self.redis_conn = redis.Redis(host='localhost', port=6379, db=0,
+        #                              decode_responses=True)
         self.doing_list = []
         self.weibo_client = None
         logging.info("Worker #%s inited." % workerid)
-
-    def mysql_select(self, sql, args, size=None, log=True):
-        if log:
-            logging.info(sql + '\n\t' + (args or ""))
-        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
-        try:
-            cur.execute(sql.replace('?', '%s'), args or ())
-            if size:
-                if size == 1:
-                    rs = cur.fetchone()
-                else:
-                    rs = cur.fetchmany(size)
-            else:
-                rs = cur.fetchall()
-        except BaseException as e:
-            raise
-        finally:
-            cur.close()
-        if log:
-            if rs:
-                rss = len(rs)
-            else:
-                rss = 0
-            logging.info('rows returned: %s' % rss)
-        return rs
-
-    def mysql_execute(self, sql, args, log=True):
-        if log:
-            logging.info(sql + '\n\t' + str(args))
-        cur = self.mysql_conn.cursor(MySQLdb.cursors.DictCursor)
-        try:
-            cur.execute(sql.replace('?', '%s'), args)
-            affected = cur.rowcount
-        except BaseException as e:
-            print("Unexpected error:", sys.exc_info()[0])
-            raise
-        finally:
-            cur.close()
-        if log:
-            logging.info('rows affected: %s' % affected)
-        return affected
 
     def run(self):
         """ 运行worker """
@@ -145,22 +118,23 @@ class WorkerDaemon(Daemon):
 
     def save_poi(self, poi, taskid):
         sql = "SELECT `task_id` from `weibo_checkin_poi` where `poiid` = ?"
-        res = self.mysql_select(sql, (poi["poiid"],))
-        if len(res) == 0:
+        res = self.mysql_select(sql, (poi["poiid"],), log=False)
+        if len(res) != 0:
             return False
         sql = "INSERT INTO `weibo_checkin_poi` " + \
               "(`poiid`, `title`, `category_name`, `lon`, `lat`, `icon`, `poi_pic`, `task_id`)" + \
               "VALUES(?,?,?,?,?,?,?,?)"
         args = (poi["poiid"], poi["title"], poi["category_name"], float(poi["lon"]), float(poi["lat"]),
                 poi["icon"], poi["poi_pic"], taskid)
-        res = self.mysql_execute(sql, args)
+        res = self.mysql_execute(sql, args, log=False)
         if res == 1:
             self.redis_conn.hincrby("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id), "poi_add_count")
             return True
         return False
 
     def get_pois_at(self, lon, lat, taskid):
-        time.sleep(2)  # 下载数据
+        # time.sleep(2)
+        # return
         if self.weibo_client.is_expires():
             self.get_weibo_token(config["weibo_apps"][0]["app_key"],
                                  config["weibo_apps"][0]["app_secret"],
@@ -171,12 +145,12 @@ class WorkerDaemon(Daemon):
         page = 1
         res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page)
         while res:
-            total = 0
+            page_add = 0
             for item in res["pois"]:
                 if self.save_poi(item, taskid):
-                    total += 1
+                    page_add += 1
             logging.info("lon: %s, lat: %s, page: %s, total: %s, add: %s" %
-                         (lon, lat, page, len(res["pois"]), total))
+                         (lon, lat, page, len(res["pois"]), page_add))
 
             page += 1
             if self.weibo_client.is_expires():
@@ -254,7 +228,6 @@ class WorkerDaemon(Daemon):
                         self.redis_conn.hset("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id),
                                              "errormsg", errmsg)
                         raise
-                        sys.exit()
                     time.sleep(2)  # 每次网络请求的间隔
                 # 由于用户主动暂停而终止：
                 self.redis_conn.lpop("poi_worker_" + str(self.worker_id) + "_doing_list")
@@ -276,7 +249,7 @@ if __name__ == '__main__':
         level=logging.INFO,
         format='%(asctime)s %(filename)s[line:%(lineno)d]\n\t%(levelname)s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
-        filename='worker_daemon_%s.log' % (time.strftime("%Y-%m-%d", time.localtime()))
+        filename='log/worker_daemon_%s.log' % (time.strftime("%Y-%m-%d", time.localtime()))
     )
 
     # 守护进程
