@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^api/area/update/', views.update_area),
     url(r'^api/area/pause/', views.pause_area),
     url(r'^api/area/continue/', views.continue_area),
+    url(r'^api/area/(?P<area_id>[0-9]+)/pois/$', views.get_pois),
 
     # 任务相关
     url(r'^api/task/pois/', views.get_pois_task),

@@ -157,6 +157,10 @@ function show_area(minlat, minlon, maxlat, maxlon) {
     draw_layers.push(area);
 }
 
+var poi_infowindows = [];
+var poi_markers = [];
+var poi_points = [];
+
 function select_area(id) {
     selected_area = id;
     if (id == -1) {
@@ -173,7 +177,34 @@ function select_area(id) {
         $("#nav-menu-area").hide();
         var point = new BMap.Point((minlon + maxlon) / 2, (minlat + maxlat) / 2); // 创建点坐标
         map.panTo(point);
+        $.get('/api/area/' + id + '/pois/', function(data) {
+            for (i in data.data) {
+                var point = new BMap.Point(data.data[i].lon, data.data[i].lat);
+                var marker = new BMap.Marker(point);
+                var title = data.data[i].title;
+                map.addOverlay(marker);
+                addClickHandler(title, marker);
+            }
+        });
     }
+}
+
+function addClickHandler(content, marker) {
+    marker.addEventListener("click", function(e) {
+        openInfo(content, e)
+    });
+}
+
+function openInfo(content, e) {
+    var p = e.target;
+    var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+    var opts = {
+        width: 250, // 信息窗口宽度    
+        height: 100, // 信息窗口高度    
+        title: "POI" // 信息窗口标题   
+    };
+    var infoWindow = new BMap.InfoWindow(content, opts); // 创建信息窗口对象 
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
 }
 
 function delete_area(id) {

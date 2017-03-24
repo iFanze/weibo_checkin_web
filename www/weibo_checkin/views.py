@@ -2,13 +2,56 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.forms.models import model_to_dict
-from .models import Area, POITask
+from .models import Area, POITask, POI
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 
 from django.conf import settings
 from django.core.cache import cache
 import redis
+import math
+
+key = 'your key here'  # 这里填写你的高德api的key
+x_pi = 3.14159265358979324 * 3000.0 / 180.0
+pi = 3.1415926535897932384626  # π
+a = 6378245.0  # 长半轴
+ee = 0.00669342162296594323  # 扁率
+
+
+def gcj02tobd09(lng, lat):
+    """
+    火星坐标系(GCJ-02)转百度坐标系(BD-09)
+    谷歌、高德——>百度
+    :param lng:火星坐标经度
+    :param lat:火星坐标纬度
+    :return:
+    """
+    lng = float(lng)
+    lat = float(lat)
+    z = math.sqrt(lng * lng + lat * lat) + 0.00002 * math.sin(lat * x_pi)
+    theta = math.atan2(lat, lng) + 0.000003 * math.cos(lng * x_pi)
+    bd_lng = z * math.cos(theta) + 0.0065
+    bd_lat = z * math.sin(theta) + 0.006
+    return [bd_lng, bd_lat]
+
+
+def bd09togcj02(bd_lon, bd_lat):
+    """
+    百度坐标系(BD-09)转火星坐标系(GCJ-02)
+    百度——>谷歌、高德
+    :param bd_lat:百度坐标纬度
+    :param bd_lon:百度坐标经度
+    :return:转换后的坐标列表形式
+    """
+    bd_lon = float(bd_lon)
+    bd_lat = float(bd_lat)
+    x = bd_lon - 0.0065
+    y = bd_lat - 0.006
+    z = math.sqrt(x * x + y * y) - 0.00002 * math.sin(y * x_pi)
+    theta = math.atan2(y, x) - 0.000003 * math.cos(x * x_pi)
+    gg_lng = z * math.cos(theta)
+    gg_lat = z * math.sin(theta)
+    return [gg_lng, gg_lat]
 
 
 # Create your views here.
@@ -147,12 +190,14 @@ def update_area(request):
     r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
     r.rpush("poi_task_" + str(new_task.id) + "_worker_list", 1)
     # poi_task_*_worker_*。
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lat", area.min_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lat", area.max_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lon", area.min_lon)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lon", area.max_lon)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lat", area.min_lat)
-    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lon", area.min_lon)
+    (min_lon_amap, min_lat_amap) = bd09togcj02(area.min_lon, area.min_lat)
+    (max_lon_amap, max_lat_amap) = bd09togcj02(area.max_lon, area.max_lat)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lat", min_lat_amap)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lat", max_lat_amap)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "min_lon", min_lon_amap)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "max_lon", max_lon_amap)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lat", min_lat_amap)
+    r.hset("poi_task_" + str(new_task.id) + "_worker_1", "cur_lon", min_lon_amap)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "progress", 0)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "poi_add_count", 0)
     r.hset("poi_task_" + str(new_task.id) + "_worker_1", "errormsg", "")
@@ -209,6 +254,15 @@ def get_pois_task(request):
         res.append(item)
 
     return JsonResponse(APIResult(is_success=True, data=res))
+
+
+def get_pois(request, area_id):
+    area = Area.objects.get(pk=area_id)
+    pois = POI.objects.filter(area=area)
+    pois = list(map(model_to_dict, pois))
+    for i in range(len(pois)):
+        (pois[i]["lon"], pois[i]["lat"]) = gcj02tobd09(pois[i]["lon"], pois[i]["lat"])
+    return JsonResponse(APIResult(is_success=True, data=pois))
 
 
 def test(request):

@@ -4,17 +4,8 @@ from web_daemon import WebDaemon
 
 class WebDaemonTestCase(unittest.TestCase):
     def test_mysql_select(self):
-        res = self.daemon.mysql_select("select * from `weibo_checkin_area` where id=5", None)
+        res = self.daemon.mysql_select("select count(*) as count from `weibo_checkin_area`", None, 1)
         print(res)
-        res = self.daemon.mysql_select("select * from `weibo_checkin_area`", None, 1)
-        res = self.daemon.mysql_select("select * from `weibo_checkin_area`", None, 2)
-
-    #def test_mysql_update(self):
-    #    res = self.daemon.mysql_execute("update `weibo_checkin_poitask` set `progress`= ? where id = ?", (5, '12'))
-    # def test_redis_lfind(self):
-    #     self.assertEqual(self.daemon.redis_lfind("bbbb", "a"), -2)
-    #     self.assertEqual(self.daemon.redis_lfind("bbb", "a"), -1)
-    #     self.assertEqual(self.daemon.redis_lfind("bbb", "2"), 1)
 
     def setUp(self):
         self.daemon = WebDaemon('/tmp/watch_process.pid', stdout="/dev/stdout")

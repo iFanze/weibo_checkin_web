@@ -48,7 +48,7 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
 
         self.worker_id = workerid
         self.weibo_apps = []
-        self.delta_latlon = 0.005
+        self.delta_latlon = 0.001
         # self.mysql_conn = MySQLdb.connect(host="localhost", user="root",
         #                                   passwd="admin", db="weibo_checkin")
         # self.redis_conn = redis.Redis(host='localhost', port=6379, db=0,
@@ -148,7 +148,7 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
                                  config["weibo_apps"][0]["accounts"][0]["password"],
                                  )
         page = 1
-        res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page)
+        res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100)
         while res:
             page_add = 0
             for item in res["pois"]:
@@ -166,7 +166,7 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
                                      config["weibo_apps"][0]["accounts"][0]["password"],
                                      )
             time.sleep(2)
-            res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page)
+            res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100)
 
     def execute_poi_task(self, taskid):
         """ 开始/继续一个任务 """
