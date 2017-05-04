@@ -47,6 +47,16 @@ class POI(models.Model):
     checkin_num = models.IntegerField(default=0)
     area = models.ForeignKey(Area, on_delete=models.SET_NULL, null=True)
     task = models.ForeignKey(POITask, on_delete=models.CASCADE)
+    lon_baidu = models.DecimalField(max_digits=9, decimal_places=6, null=True, default=None)
+    lat_baidu = models.DecimalField(max_digits=9, decimal_places=6, null=True, default=None)
+
+
+class Checkin(models.Model):
+    mid = models.CharField(max_length=30, primary_key=True)
+    text = models.CharField(max_length=200)
+    created_at = models.DateTimeField()
+    user_name = models.CharField(max_length=50)
+    poi = models.ForeignKey(POI, on_delete=models.CASCADE)
 
 
 # class POITaskWorker(models.Model):

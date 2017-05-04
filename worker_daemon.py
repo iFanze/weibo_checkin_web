@@ -12,6 +12,8 @@ from daemon import Daemon
 from mysql_conn import MySQLConn
 from redis_conn import RedisConn
 
+from MySQLdb import OperationalError
+
 
 class JsonDict(dict):
     """ general json object that allows attributes to be bound to and also behaves like a dict """
@@ -118,7 +120,6 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
 
     def save_poi(self, poi, taskid):
         sql = "SELECT `area_id` from `weibo_checkin_poitask` where `id` = ?"
-        sql = "SELECT `area_id` from `weibo_checkin_poitask` where `id` = ?"
         res = self.mysql_select(sql, (taskid,), 1, log=False)
         areaid = int(res["area_id"])
         sql = "SELECT `task_id` from `weibo_checkin_poi` where `poiid` = ?"
@@ -127,8 +128,8 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
             return False
         sql = "INSERT INTO `weibo_checkin_poi` " + \
               "(`poiid`, `title`, `area_id`, `category_name`, `lon`, `lat`, " + \
-              "`icon`, `poi_pic`, `task_id`, `checkin_user_num`, `checkin_num`)" + \
-              "VALUES(?,?,?,?,?,?,?,?,?,?,?)"
+              "`icon`, `poi_pic`, `task_id`, `checkin_user_num`, `checkin_num`, `lat_baidu`, `lon_baidu`)" + \
+              "VALUES(?,?,?,?,?,?,?,?,?,?,?,null,null)"
         args = (poi["poiid"], poi["title"], areaid, poi["category_name"], float(poi["lon"]), float(poi["lat"]),
                 poi["icon"], poi["poi_pic"], taskid, int(poi["checkin_user_num"]), int(poi["checkin_num"]))
         res = self.mysql_execute(sql, args, log=False)
@@ -136,6 +137,90 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
             self.redis_conn.hincrby("poi_task_" + str(taskid) + "_worker_" + str(self.worker_id), "poi_add_count")
             return True
         return False
+
+    def save_checkin(self, checkin):
+        sql = "SELECT * from `weibo_checkin_checkin` where `mid` = ?"
+        logging.info(checkin)
+        res = self.mysql_select(sql, (checkin["mid"],))
+        if len(res) != 0:
+            return False
+        time_obj = time.strptime(checkin["created_at"], "%a %b %d %H:%M:%S %z %Y")
+        time_str = time.strftime("%Y-%m-%d %H:%M:%S", time_obj)
+
+        sql = "INSERT INTO `weibo_checkin_checkin` " + \
+              "(`mid`, `text`, `created_at`, `user_name`, `poi_id`) " + \
+              "VALUES(?,?,?,?,?)"
+        try:
+            args = (checkin["mid"], checkin["text"][0:20], time_str,
+                    checkin["user"]["name"], checkin["annotations"][0]["place"]["poiid"])
+        except KeyError:
+            # 比如，有些deleted为1的条目没有checkin["user']
+            return False
+
+        try:
+            res = self.mysql_execute(sql, args)
+        except OperationalError:
+            logging.warning("incorrect charater found in: %s" % checkin["text"])
+            args = (checkin["mid"], "[该微博包括特殊字符，不能存储。]", time_str,
+                    checkin["user"]["name"], checkin["annotations"][0]["place"]["poiid"])
+            res = self.mysql_execute(sql, args)
+        if res == 1:
+            return True
+        return False
+
+    def get_checkins_at(self, poiid):
+        if self.weibo_client.is_expires():
+            self.get_weibo_token(config["weibo_apps"][0]["app_key"],
+                                 config["weibo_apps"][0]["app_secret"],
+                                 config["weibo_apps"][0]["callback_url"],
+                                 config["weibo_apps"][0]["accounts"][0]["username"],
+                                 config["weibo_apps"][0]["accounts"][0]["password"],
+                                 )
+        page = 1
+        if self.redis_conn.exists("checkin_task_" + poiid + "_page"):
+            page = int(self.redis_conn.get("checkin_task_" + poiid + "_page"))
+        res = self.weibo_client.place.poi_timeline.get(poiid=poiid, page=page, count=50)
+        while True:
+            if not res:
+                break
+            if not res["statuses"]:
+                break
+            page_add = 0
+            last_time = None
+            if isinstance(res["statuses"], list):
+                for item in res["statuses"]:
+                    last_time = time.strptime(item["created_at"], "%a %b %d %H:%M:%S %z %Y")
+                    if self.save_checkin(item):
+                        page_add += 1
+            else:
+                for key in res["statuses"].keys():
+                    last_time = time.strptime(res["statuses"][key]["created_at"], "%a %b %d %H:%M:%S %z %Y")
+                    if self.save_checkin(res["statuses"][key]):
+                        page_add += 1
+            logging.info("checkin page: %s, total: %s, add: %s" %
+                         (page, len(res["statuses"]), page_add))
+
+            # 只取最近一个月的。
+            if time.mktime(last_time) + 3600 * 24 * 30 < time.mktime(time.localtime()):
+                break
+
+            page += 1
+            self.redis_conn.set("checkin_task_" + poiid + "_page", page)
+
+            if page > 100:
+                break
+
+            if self.weibo_client.is_expires():
+                self.get_weibo_token(config["weibo_apps"][0]["app_key"],
+                                     config["weibo_apps"][0]["app_secret"],
+                                     config["weibo_apps"][0]["callback_url"],
+                                     config["weibo_apps"][0]["accounts"][0]["username"],
+                                     config["weibo_apps"][0]["accounts"][0]["password"],
+                                     )
+            time.sleep(2)
+            res = self.weibo_client.place.poi_timeline.get(poiid=poiid, page=page, count=50)
+
+        self.redis_conn.delete("checkin_task_" + poiid + "_page")
 
     def get_pois_at(self, lon, lat, taskid):
         # time.sleep(2)
@@ -148,16 +233,38 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
                                  config["weibo_apps"][0]["accounts"][0]["password"],
                                  )
         page = 1
-        res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100)
+        if self.redis_conn.exists("poi_task_" + taskid + "_page"):
+            page = int(self.redis_conn.get("poi_task_" + taskid + "_page"))
+
+        res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100, count=50)
         while res:
             page_add = 0
+            cur_poiid = ""
+            if self.redis_conn.exists("poi_task_" + taskid + "_poiid"):
+                cur_poiid = self.redis_conn.get("poi_task_" + taskid + "_poiid")
+
             for item in res["pois"]:
                 if self.save_poi(item, taskid):
                     page_add += 1
+                    self.get_checkins_at(item["poiid"])
+                    self.redis_conn.set("poi_task_" + taskid + "_poiid", item["poiid"])
+                else:
+                    # 获取签到信息。
+                    if cur_poiid == "":
+                        continue
+                    else:
+                        if cur_poiid == item["poiid"]:
+                            self.get_checkins_at(item["poiid"])
+                            cur_poiid = ""
+
+            self.redis_conn.delete("poi_task_" + taskid + "_poiid")
+
             logging.info("lon: %s, lat: %s, page: %s, total: %s, add: %s" %
                          (lon, lat, page, len(res["pois"]), page_add))
 
             page += 1
+            self.redis_conn.set("poi_task_" + taskid + "_page", page)
+
             if self.weibo_client.is_expires():
                 self.get_weibo_token(config["weibo_apps"][0]["app_key"],
                                      config["weibo_apps"][0]["app_secret"],
@@ -166,7 +273,8 @@ class WorkerDaemon(Daemon, MySQLConn, RedisConn):
                                      config["weibo_apps"][0]["accounts"][0]["password"],
                                      )
             time.sleep(2)
-            res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100)
+            res = self.weibo_client.place.nearby.pois.get(lat=lat, long=lon, page=page, range=100, count=50)
+        self.redis_conn.delete("poi_task_" + taskid + "_page")
 
     def execute_poi_task(self, taskid):
         """ 开始/继续一个任务 """
@@ -278,52 +386,3 @@ if __name__ == '__main__':
     else:
         print('usage: %s start|stop|restart' % sys.argv[0])
         sys.exit(2)
-#
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format='%(asctime)s %(filename)s[line:%(lineno)d]\n\t%(levelname)s %(message)s',
-#     datefmt='%Y-%m-%d %H:%M:%S',
-#     filename='example.log'
-#
-# )
-#
-# APP_KEY = "3226611318"
-# APP_SECRET = "4f94b19d1d30c6bce2505e69d22cd62e"
-# CALLBACK_URL = "https://api.weibo.com/oauth2/default.html"
-#
-# print("start login...")
-#
-# client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
-#
-# code = ''
-# try:
-#     code = WeiboLogin("ichen0201@sina.com", "s2013h1cfr", APP_KEY, CALLBACK_URL).get_code()
-# except WeiboLoginError as e:
-#     print("Login Fail [%s]: %s" % (e.error_code, e.error))
-#     exit(1)
-#
-# print("code: %s" % code)
-#
-# # client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
-#
-# r = client.request_access_token(code)
-#
-# access_token = r.access_token
-# expires_in = r.expires_in
-#
-# print("token: %s" % access_token)
-# print("expires in %s" % expires_in)
-#
-# client.set_access_token(access_token, expires_in)
-#
-# # print(client.statuses.user_timeline.get())
-# # print(client.statuses.update.post(status=u'测试OAuth 2.0发微博'))
-# # print(client.statuses.upload.post(status=u'测试OAuth 2.0带图片发微博', pic=open('/Users/Fanze/Pictures/Wallpapers/4yzPVohNuVI.jpg')))
-#
-# print(client.place.nearby.pois.get(lat=30.525985500492297, long=114.36581559753414))
-# # print(client.place.poi_timeline.get(poiid="B2094750D26FA1FD4999"))
-#
-#
-# # r = client.statuses.user_timeline.get(uid="1689924681")
-# # for st in r.statuses:
-# #     print(st.text)

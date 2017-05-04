@@ -21,6 +21,9 @@ urlpatterns = [
     # 任务相关
     url(r'^api/task/pois/', views.get_pois_task),
 
+    # 签到相关
+    url(r'^api/checkins/', views.get_checkins),
+
     # 测试
     url(r'test/', views.test),
 ]

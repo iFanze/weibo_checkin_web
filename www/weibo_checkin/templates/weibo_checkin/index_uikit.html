@@ -2,16 +2,24 @@
 <html>
 
 <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title></title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'weibo_checkin/css/uikit.min.css' %}" />
     <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery.nstSlider.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery-ui.css' %}" />
+    <link rel="stylesheet" href="{% static 'weibo_checkin/css/jquery-ui-slider-pips.min.css' %}" />
     <link rel="stylesheet" href="{% static 'weibo_checkin/css/index.css' %}">
     <script src="{% static 'weibo_checkin/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'weibo_checkin/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'weibo_checkin/js/jquery-ui-slider-pips.js' %}"></script>
     <script src="{% static 'weibo_checkin/js/uikit.min.js' %}"></script>
     <script src="{% static 'weibo_checkin/js/jquery.nstSlider.min.js' %}"></script>
     <script src="http://api.map.baidu.com/api?v=2.0&ak=9b47Gya8CGy0ssOKR4GPoPRd33hDM2Q7"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager.css" />
 </head>
 
@@ -230,6 +238,7 @@
                                                             <td class="uk-width-1-5">时间粒度：</td>
                                                             <td class="uk-width-4-5">
                                                                 <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                                                                    <li><a href="#">全部</a></li>
                                                                     <li><a href="#">按天</a></li>
                                                                     <li><a href="#">按小时</a></li>
                                                                     <li><a href="#">任意时间跨度</a></li>
@@ -242,11 +251,14 @@
                                                             <td class="uk-width-4-5">
                                                                 <div class="uk-grid uk-grid-collapse">
                                                                     <div class="uk-width-1-2@m">
-                                                                        <input class="uk-input" type="text" placeholder="起始时间">
+                                                                        <input id="from-date" class="uk-input" type="text" placeholder="起始时间" value="2017-04-09">
                                                                     </div>
                                                                     <div class="uk-width-1-2@m">
-                                                                        <input class="uk-input" type="text" placeholder="结束时间">
+                                                                        <input id="to-date" class="uk-input" type="text" placeholder="结束时间" value="2017-04-10">
                                                                     </div>
+                                                                </div>
+                                                                <div class="slider-container">
+                                                                    <div class="slider"></div>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -254,15 +266,19 @@
                                                             <td class="uk-width-1-5">图层显示：</td>
                                                             <td class="uk-width-4-5">
                                                                 <label style="margin-right: 10px">
-                                                                    <input class="uk-checkbox" type="checkbox" checked> 热力图</label>
+                                                                    <input class="uk-checkbox" type="checkbox" id="show_poi" checked> POI</label>
                                                                 <label style="margin-right: 10px">
-                                                                    <input class="uk-checkbox" type="checkbox" checked> 点聚合</label>
+                                                                    <input class="uk-checkbox" type="checkbox" id="show_heatmap" checked> 热力图</label>
+                                                                <label style="margin-right: 10px">
+                                                                    <input class="uk-checkbox" type="checkbox" id="show_cluster" checked> 点聚合</label>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="uk-width-1-5"></td>
                                                             <td class="uk-width-4-5">
-                                                                注：可使用左右方向键快速切换到下一个时间段。
+                                                                <div>
+                                                                    注：可使用左右方向键快速切换到下一个时间段。
+                                                                </div>
                                                             </td>
                                                         </tr>
                                                     </tbody>

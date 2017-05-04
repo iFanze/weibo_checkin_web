@@ -10,6 +10,10 @@ var new_area_name = "";
 
 var all_areas = [];
 
+var show_poi = true;
+var show_heatmap = true;
+var show_cluster = true;
+
 var draw_style = {
     strokeColor: "#0f89f5", //边线颜色。
     fillColor: "#0f89f5", //填充颜色。当参数为空时，圆形将没有填充效果。
@@ -29,6 +33,19 @@ function show_message(msg, type = "primary") {
     });
 }
 
+function addDate(dd, dadd) {
+    var a = new Date(dd)
+    a = a.valueOf()
+    a = a + dadd * 24 * 60 * 60 * 1000
+    a = new Date(a)
+    zero1 = ""
+    if (a.getUTCMonth() < 10)
+        zero1 = "0"
+    zero2 = ""
+    if (a.getUTCDate() < 10)
+        zero2 = "0"
+    return a.getFullYear() + "-" + zero1 + (a.getUTCMonth() + 1) + "-" + zero2 + a.getUTCDate();
+}
 // =============== 初始化 =================
 function init_map() {
     // 初始化百度地图
@@ -58,6 +75,20 @@ function init_control() {
             $('.rightLabel').text(rightValue);
         },
     });
+
+    time = ["2016-3-30", "2016-4-5", "2016-4-9", "2016-4-13", "2016-4-17", "2016-4-21", "2016-4-25", "2016-4-29"];
+    short_time = [];
+    for (i in time) {
+        x = time[i].slice(5);
+        short_time.push(x);
+    }
+    $(".slider").slider({
+        min: 0,
+        max: time.length - 1
+    }).slider("pips", {
+        rest: "label",
+        labels: short_time
+    });
 }
 
 function init_event() {
@@ -73,6 +104,71 @@ function init_event() {
         draw_mode = true;
         open_draw_mode();
     });
+
+    $("#show_poi").click(function(event) {
+        if ($("#show_poi").prop("checked"))
+            show_poi = true;
+        else
+            show_poi = false;
+        refresh_overlays();
+    });
+
+    $("#show_heatmap").click(function(event) {
+        if ($("#show_heatmap").prop("checked"))
+            show_heatmap = true;
+        else
+            show_heatmap = false;
+        refresh_overlays();
+    });
+
+    $("#show_cluster").click(function(event) {
+        if ($("#show_cluster").prop("checked"))
+            show_cluster = true;
+        else
+            show_cluster = false;
+        refresh_overlays();
+    });
+
+    // 为页面添加消息响应函数，在键盘上有按键被按下时触发
+    document.onkeydown = chang_page;
+
+    function chang_page() {
+        // 如果是左方向键
+        if (event.keyCode == 37) {
+            var tempDate = new Date();
+            tempDate.setFullYear(from_date.substring(0, 4),
+                from_date.substring(5, 7),
+                from_date.substring(8, 10));
+            from_date = addDate(from_date, -1);
+
+            tempDate.setFullYear(to_date.substring(0, 4),
+                to_date.substring(5, 7),
+                to_date.substring(8, 10));
+            to_date = addDate(to_date, -1);
+
+            $("#from-date").val(from_date);
+            $("#to-date").val(to_date);
+        }
+        // 如果是右方向键
+        if (event.keyCode == 39) {
+            var tempDate = new Date();
+            tempDate.setFullYear(from_date.substring(0, 4),
+                from_date.substring(5, 7),
+                from_date.substring(8, 10));
+            from_date = addDate(from_date, 1);
+
+            tempDate.setFullYear(to_date.substring(0, 4),
+                to_date.substring(5, 7),
+                to_date.substring(8, 10));
+            to_date = addDate(to_date, 1);
+
+            $("#from-date").val(from_date);
+            $("#to-date").val(to_date);
+        }
+        // 改变日期后重新获取签到数据、刷新地图
+        if (selected_area != -1)
+            get_checkins(selected_area, from_date, to_date);
+    }
 }
 
 // =============== 绘图 =================
@@ -161,6 +257,22 @@ var poi_infowindows = [];
 var poi_markers = [];
 var poi_points = [];
 
+var cluster_markers = [];
+
+var MAX = 10000;
+var pt = null;
+
+var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {
+    offset: new BMap.Size(10, 25), // 指定定位位置  
+    imageOffset: new BMap.Size(0, 0 - 10 * 25) // 设置图片偏移  
+});
+
+var poi_markers = [];
+var poi_titles = [];
+
+var from_date = "2017-04-09";
+var to_date = "2017-04-10";
+
 function select_area(id) {
     selected_area = id;
     if (id == -1) {
@@ -179,12 +291,19 @@ function select_area(id) {
         map.panTo(point);
         $.get('/api/area/' + id + '/pois/', function(data) {
             for (i in data.data) {
-                var point = new BMap.Point(data.data[i].lon, data.data[i].lat);
-                var marker = new BMap.Marker(point);
+
+                var point = new BMap.Point(data.data[i].lon_baidu, data.data[i].lat_baidu);
+                var marker = new BMap.Marker(point, {
+                    offset: new BMap.Size(width = 6, height = 15)
+                });
                 var title = data.data[i].title;
-                map.addOverlay(marker);
-                addClickHandler(title, marker);
+
+                poi_markers.push(marker);
+                poi_titles.push(title);
+                // map.addOverlay(marker);
+                // addClickHandler(title, marker);
             }
+            get_checkins(id, from_date, to_date);
         });
     }
 }
@@ -295,7 +414,6 @@ function continue_area(id) {
     })
 }
 
-
 function get_pois_task() {
     $.get("/api/task/pois/", function(data) {
         if (data.is_success) {
@@ -327,6 +445,79 @@ function get_pois_task() {
     });
 }
 
+var allHeatmapPoints = [];
+var allClusterMarkers = [];
+// =============== 可视化 =================
+
+function show_cluster_markers(from, to) {
+
+}
+
+var heatmapOverlay;
+var markerClusterer;
+
+function get_checkins(areaid, from, to) {
+    show_message(from_date);
+    $.get("/api/checkins/", {
+        area_id: areaid,
+        from_date: from,
+        to_date: to
+    }, function(data) {
+        if (data.is_success) {
+            allHeatmapPoints = [];
+            allClusterMarkers = [];
+            for (i in data.data) {
+                checkin = data.data[i];
+                heatmapPoint = {
+                    "lng": checkin.lon,
+                    "lat": checkin.lat,
+                    "count": checkin.checkin_count
+                };
+                allHeatmapPoints.push(heatmapPoint);
+                var j = 0;
+                for (j = 0; j < heatmapPoint.count; j++)
+                    allClusterMarkers.push(new BMap.Marker(new BMap.Point(heatmapPoint.lng, heatmapPoint.lat)));
+            }
+
+
+            heatmapOverlay = new BMapLib.HeatmapOverlay({ "radius": 80 });
+            // map.addOverlay(heatmapOverlay);
+            // heatmapOverlay.setDataSet({ data: allHeatmapPoints, max: 50 });
+            // heatmapOverlay.show();
+
+            //markerClusterer = new BMapLib.MarkerClusterer(map, {markers:allClusterMarkers});
+            refresh_overlays();
+
+        }
+
+    });
+}
+
+function refresh_overlays() {
+    map.clearOverlays();
+    if (show_poi) {
+        var counts = poi_markers.length;
+        for (var i = 0; i < counts; i++) {
+            map.addOverlay(poi_markers[i]);
+            addClickHandler(poi_titles[i], poi_markers[i]);
+        }
+    }
+    if (show_heatmap) {
+        map.addOverlay(heatmapOverlay);
+        heatmapOverlay.setDataSet({ data: allHeatmapPoints, max: 10 });
+        heatmapOverlay.show();
+    }
+    if (show_cluster) {
+        markerClusterer = new BMapLib.MarkerClusterer(map, { markers: allClusterMarkers });
+    }
+    minlat = parseFloat($("#minlat_of_" + selected_area).val());
+    minlon = parseFloat($("#minlon_of_" + selected_area).val());
+    maxlat = parseFloat($("#maxlat_of_" + selected_area).val());
+    maxlon = parseFloat($("#maxlon_of_" + selected_area).val());
+    show_area(minlat, minlon, maxlat, maxlon);
+}
+
+
 $(function() {
     init_map();
     init_control();
@@ -343,3 +534,11 @@ $(function() {
 // $('.nstSlider').nstSlider('highlight_range', 20, 50);
 
 // $('.nstSlider').nstSlider('highlight_range', 60, 70);
+
+var marker = new BMap.Marker(point);        // 创建标注    
+map.addOverlay(marker);                     // 将标注添加到地图中
+
+BMap.Point(116.404, 39.915)
+
+
+

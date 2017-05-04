@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.forms.models import model_to_dict
-from .models import Area, POITask, POI
+from .models import Area, POITask, POI, Checkin
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 
@@ -10,6 +10,7 @@ from django.conf import settings
 from django.core.cache import cache
 import redis
 import math
+import datetime
 
 key = 'your key here'  # 这里填写你的高德api的key
 x_pi = 3.14159265358979324 * 3000.0 / 180.0
@@ -260,9 +261,36 @@ def get_pois(request, area_id):
     area = Area.objects.get(pk=area_id)
     pois = POI.objects.filter(area=area)
     pois = list(map(model_to_dict, pois))
-    for i in range(len(pois)):
-        (pois[i]["lon"], pois[i]["lat"]) = gcj02tobd09(pois[i]["lon"], pois[i]["lat"])
+    # for i in range(len(pois)):
+    #     (pois[i]["lon"], pois[i]["lat"]) = gcj02tobd09(pois[i]["lon"], pois[i]["lat"])
     return JsonResponse(APIResult(is_success=True, data=pois))
+
+
+def get_checkins(request):
+    from_date = datetime.datetime.strptime(request.GET['from_date'], "%Y-%m-%d")
+    to_date = datetime.datetime.strptime(request.GET['to_date'], "%Y-%m-%d")
+    area = Area.objects.get(pk=request.GET['area_id'])
+    pois = POI.objects.filter(area=area)
+    return_poi_and_checkins = []
+    for poi in pois:
+        poiid = poi.poiid
+        title = poi.title
+        lat = poi.lat_baidu
+        lon = poi.lon_baidu
+        checkins = Checkin.objects.filter(poi=poi).filter(created_at__gte=from_date).filter(created_at__lte=to_date)
+        checkins = list(map(model_to_dict, checkins))
+        if not checkins:
+            continue
+        return_poi_and_checkins.append({
+            'poiid': poiid,
+            'title': title,
+            'lat': lat,
+            'lon': lon,
+            'checkin_count': len(checkins),
+            'checkins': checkins
+        })
+
+    return JsonResponse(APIResult(is_success=True, data=return_poi_and_checkins))
 
 
 def test(request):

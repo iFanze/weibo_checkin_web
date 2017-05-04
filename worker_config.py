@@ -14,12 +14,16 @@ config = {
     },
     "weibo_apps": [{
         "name": "Fanze1",
-        "app_key": "3226611318",
-        "app_secret": "4f94b19d1d30c6bce2505e69d22cd62e",
+        # "app_key": "3226611318",
+        # "app_secret": "4f94b19d1d30c6bce2505e69d22cd62e",
+        "app_key": "1617636062",
+        "app_secret": "3bc936c29c951ff20354717342d11ff4",
         "callback_url": "https://api.weibo.com/oauth2/default.html",
         "accounts": [{
             "username": "ichen0201@sina.com",
-            "password": "s2013h1cfr"
+            "password": "s2013h1cfr",
+            # "username": "15827366706",
+            # "password": "s2010h1cfr"
         }, {
             "username": "",
             "password": ""
